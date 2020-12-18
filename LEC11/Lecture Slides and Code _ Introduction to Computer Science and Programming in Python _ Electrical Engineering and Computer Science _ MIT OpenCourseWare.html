@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<!-- saved from url=(0168)https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/lecture-slides-code/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" src="./Lecture Slides and Code _ Introduction to Computer Science and Programming in Python _ Electrical Engineering and Computer Science _ MIT OpenCourseWare_files/1.txt"></script><script type="text/javascript" src="./Lecture Slides and Code _ Introduction to Computer Science and Programming in Python _ Electrical Engineering and Computer Science _ MIT OpenCourseWare_files/1(1).txt"></script><script src="./Lecture Slides and Code _ Introduction to Computer Science and Programming in Python _ Electrical Engineering and Computer Science _ MIT OpenCourseWare_files/f.txt"></script><script async="" src="./Lecture Slides and Code _ Introduction to Computer Science and Programming in Python _ Electrical Engineering and Computer Science _ MIT OpenCourseWare_files/async-ads.js"></script><script src="./Lecture Slides and Code _ Introduction to Computer Science and Programming in Python _ Electrical Engineering and Computer Science _ MIT OpenCourseWare_files/pubads_impl_rendering_225.js"></script><script type="text/javascript">
+
+(function() {
+	window.trackingUtils=function(k,b,d,n,o,g,c,p,r,m){var f={},i=new RegExp("/(ref=[\\w]+)/?","i"),h=function(s){return s&&encodeURIComponent(s).replace(/&/g,"&amp;").replace(/"/g,"&quot;").replace(/</g,"&lt;").replace(/>/g,"&gt;");},l=(function(){var s=document.createElement("a");s.href=(window.location!==window.parent.location)?document.referrer:document.location;return s.protocol+"//"+s.hostname+((s.port===""||s.port==="80"||s.port==="443")?"":(":"+s.port))+(s.pathname.indexOf("/")!==0?("/"+s.pathname):s.pathname);}()),q=(function(){return h(l);}()),j=function(s,u,v,t){if(typeof v==="string"&&v!==""){if(s.search===""){s.search="?"+u+"="+v;}else{if(!s.search.match(new RegExp("[?&]"+u+"="))){s.search=s.search.replace(/\?/,"?"+u+"="+v+"&");}else{if(t){s.search=s.search.replace(new RegExp(u+"=([^&]*)"),u+"="+v);}}}}return s;},e=function(u,s,t){if(typeof t==="string"&&t!==""){if(!u.match(/\?/)){u=u+"?"+s+"="+t;}else{if(!u.match(s)){u=u.replace(/\?/,"?"+s+"="+t+"&");}}}return u;},a=function(t){var s=(typeof c!=="undefined")?c:0;if(typeof t!=="undefined"){s=t;}return s;};f.addRefUrls=function(x,y,t,s){var z=new RegExp("^http://.*(amazon|endless|myhabit|amazonwireless|javari|smallparts)\\.(com|ca|co\\.jp|de|fr|co\\.uk|cn|it|es)/.*","i"),u,w,v;for(v=0;v<x.length;v++){x[v].rel="nofollow";u=String(x[v].href);if(w=u.match(z)){x[v].href=f.addTrackingParameters(x[v],y,t,s);}}};f.addRefRefUrl=function(s){return j(s,"ref-refURL",q);};f.getRefRefUrl=function(){return q;};f.getRawRefUrl=function(){return l;};f.addSignature=function(t,s,u){return j(j(t,"sig",s),"sigts",u);};f.addLinkCode=function(t,s){return j(t,"linkCode",s);};f.addTrackingId=function(t,s){return j(t,"tag",s);};f.addLinkId=function(s,t){return j(s,"linkId",t);};f.addSubtag=function(s,t){return j(s,"ascsubtag",t);};f.addCreativeAsin=function(s,t){return j(j(s,"creativeASIN",t),"adId",t);};f.addAdType=function(t,s){return j(t,"adType",s);};f.addAdMode=function(s,t){return j(s,"adMode",t);};f.addAdFormat=function(t,s){return j(t,"adFormat",s);};f.addImpressionTimestamp=function(s,t){if(typeof t==="number"){t=t.toString();}return j(s,"impressionTimestamp",t);};f.convertToRedirectedUrl=function(s,v,t){var u=document.createElement("a");u.setAttribute("href",v);if(typeof t!=="undefined"){j(u,t,h(s.getAttribute("href")),true);}else{u.setAttribute("href",v+"/"+u.getAttribute("href"));}s.setAttribute("href",u.getAttribute("href"));return s;};f.getImpressionToken=function(){return g;};f.getClickUrl=function(){return o;};f.addImpressionToken=function(t,u){var s=a(u);if(typeof g==="string"&&g!==""){j(t,"imprToken",g);if(typeof s!=="undefined"){j(t,"slotNum",s);}}return t;};f.addImpressionTokenStr=function(u,t){var s=a(t);if(typeof g==="string"&&g!==""){u=e(u,"imprToken",g);if(typeof s!=="undefined"){u=e(u,"slotNum",s);}}return u;};f.addTrackingParameters=function(y,z,x,C,v,s,w,u,t,D,B,A){return f.addSignature(f.addCreativeAsin(f.addLinkId(f.addTrackingId(f.addSubtag(f.addLinkCode(f.addRefRefUrl(f.addImpressionToken(f.addRefMarker(f.addAdType(f.addAdMode(f.addAdFormat(f.addImpressionTimestamp(y,A),B),D),t),v))),x),p),C),z),s),w,u);};f.addRefMarker=function(t,v){var u,s=false;if(typeof v==="undefined"){return t;}if(u=t.pathname.match(i)){t.pathname=t.pathname.replace(u[1],"ref="+v);}else{s=(t.pathname.charAt(t.pathname.length-1)==="/");t.pathname=t.pathname+(s?"":"/")+"ref="+v;}return t;};f.getRefMarker=function(s){var t;if(t=s.pathname.match(i)){return t[1].substr(4);}else{return undefined;}};f.makeForesterCall=function(u){var s=undefined,t;u.refUrl=(window.location!==window.parent.location)?document.referrer:document.location.href;if(typeof JSON!=="undefined"){t=JSON.stringify(u);}else{if(typeof amzn_assoc_utils!=="undefined"&&typeof amzn_assoc_utils.stringify==="function"){t=amzn_assoc_utils.stringify(u);}else{return;}}if(typeof n==="string"){s=n+"?assoc_payload="+encodeURIComponent(t);}if(typeof s!=="undefined"){(new Image()).src=s;}};f.recordImpression=function(t,s,v,u,w){v.linkCode=t;v.trackingId=s;if(m||!r){f.makeForesterCall(v);}else{f.addABPFlag(v,f.makeForesterCall);}if(typeof u==="undefined"||!u){(new Image()).src=d+"?l="+t+"&t="+s+"&o="+k+"&cb="+(new Date()).getTime()+((typeof w!=="undefined")?w:"");}};f.addAAXClickUrls=function(t){var v,u,s;if(typeof t==="undefined"||typeof o==="undefined"){return;}for(u=0;u<t.length;u++){s=String(t[u].href);if(s.indexOf(o)<0){v=o+s;t[u].href=v;}}};f.addAAXClickUrl=function(s){if(typeof s==="undefined"||s.indexOf(o)===0){return s;}return o+s;};f.updateLinks=function(t,v){var u,s;if(typeof v!=="function"){return;}for(u=0;u<t.length;u++){s=String(t[u].href);t[u].href=v(s);}};f.elementInViewPort=function(s){var t=s.getBoundingClientRect(),u=(t.top>=0&&t.left>=0&&t.bottom<=(window.innerHeight||document.documentElement.clientHeight)&&t.right<=(window.innerWidth||document.documentElement.clientWidth));return{posX:t.left+window.pageXOffset,posY:t.top+window.pageYOffset,inViewPort:u};};f.initialViewabilityCall=function(y,t,v,x){var s=undefined,u,w={adViewability:[{above_the_fold:y,topPos:t,leftPos:v,slotNum:x}]};if(typeof JSON!=="undefined"){u=JSON.stringify(w);}else{if(typeof amzn_assoc_utils!=="undefined"&&typeof amzn_assoc_utils.stringify==="function"){u=amzn_assoc_utils.stringify(w);}else{u="";}}if(typeof n==="string"){s=n+u;}if(typeof s!=="undefined"){(new Image()).src=s+"&cb="+(new Date()).getTime();}};f.makeViewabilityCall=function(v){var s=undefined,t,u={adViewability:[{viewable:true,slotNum:v}]};if(typeof JSON!=="undefined"){t=JSON.stringify(u);}else{if(typeof amzn_assoc_utils!=="undefined"&&typeof amzn_assoc_utils.stringify==="function"){t=amzn_assoc_utils.stringify(u);}else{t="";}}if(typeof n==="string"){s=n+t;}if(typeof s!=="undefined"){(new Image()).src=s+"&cb="+(new Date()).getTime();}};f.addABPFlag=function(v,D){var x=false,w=2,u=document.body?document.body.appendChild(new Image()):new Image(),t=document.body?document.body.appendChild(new Image()):new Image(),A=false,y=false,s=Math.random()*11,C=r+"?ch=*&rn=*",B=function(F,E){if(w===0||E>1000){v.supplySideMetadata={ABPInstalled:w===0&&x};F(v);}else{setTimeout(function(){B(F,E*2);},E*2);}},z=function(){if(--w){return;}x=!A&&y;};u.style.display="none";t.style.display="none";u.onload=z;u.onerror=function(){A=true;z();};u.src=C.replace(/\*/,1).replace(/\*/,s);t.onload=z;t.onerror=function(){y=true;z();};t.src=C.replace(/\*/,2).replace(/\*/,s);B(D,250);};return f;};window.elemTracker=function(b){var a={};a.trackElements=function(d,c){var f,e;if(typeof d!=="undefined"&&d.length>0&&typeof c==="function"){window.addEventListener("scroll",function(){for(f=0;f<d.length;f++){e=b.elementInViewPort(d[f]);if(e.inViewPort){c();}}},false);}};return a;};
+	var amznAutoTaggerMaker=function(h,v,B){var D={CA:"ca",CN:"cn",IN:"in",DE:"de",FR:"fr",GB:"co.uk",JP:"co.jp",US:"com"},j={CA:[],CN:[],IN:[],DE:["javari"],FR:["javari"],GB:["javari"],JP:["javari"],US:["smallparts","amazonwireless","endless","myhabit"]},F=(function(){var O=-1,N={};N.getNextSlotNum=function(){return ++O;};return N;}()),q,o,e=Math.max(document.body.scrollHeight,document.body.offsetHeight,document.documentElement.clientHeight,document.documentElement.scrollHeight,document.documentElement.offsetHeight),m=Math.max(document.body.scrollWidth,document.body.offsetWidth,document.documentElement.clientWidth,document.documentElement.scrollWidth,document.documentElement.offsetWidth),y={totalDocWidth:m,totalDocHeight:e,logType:"onetag_pageload",pageTitle:document.title},a="w50",I="w61",H="g12",C={},b=new RegExp("%3F"),w=new Object(),x=false,l="",s="",u=0,K=0,d=0,G=new RegExp("amzn.to"),r=new RegExp(h.redirectorEndPoint),E=["kdp.amazon.com"],M=[],c=function(O){var P,N=false;for(P=0;P<E.length;P++){if(O.match(E[P])){N=true;break;}}return N;},p=function(N){return N.nextSibling&&N.nextSibling.tagName==="IMG"&&N.nextSibling.hasAttribute("src")&&(N.nextSibling.getAttribute("src").search(/ir-[a-z]{2}\.amazon-adsystem\.com/)>-1||N.nextSibling.getAttribute("src").search(/www\.assoc-amazon\.*/)>-1);},n=function(N){if(!N.href.match(r)){N.href=h.redirectorEndPoint+N.href;}},k=function(X,ad){var Y=new RegExp("/(ref=[\\w]+)/?","i"),T,ac=false,O,R,S=false,W=X.search.match(/\?tag=([^&]+)|&tag=([^&]+)|\?tag-value=([^&]+)|&tag-value=([^&]+)|\?tag_value=([^&]+)|&tag_value=([^&]+)|\?t=([^&]+)|&t=([^&]+)/),Q=X.search.match(/\?tag=|&tag=|\?tag-value=|&tag-value=|\?tag_value=|&tag_value=|\?t=|&t=/),N=X.search.match(/(linkCode|link_code|lc)=([^&]+)/i),V=v.elementInViewPort(X),ab={autoTagged:false,overwritten:false,geoRedirected:false,atf:V.inViewPort},P=F.getNextSlotNum(),U={destinationURL:X.href,slotNum:P,atfInFirstLoad:V.inViewPort,posX:V.posX,posY:V.posY,logType:"onetag_textlink"},aa=p(X),Z;ab.slotNum=P;if(X.pathname.charAt(X.pathname.length-1)!=="/"){X.pathname=X.pathname+"/";}if(X.search===""){X.search="?imprToken="+v.getImpressionToken()+"&slotNum="+P;}else{X.search=X.search.replace(/\?/,"?imprToken="+v.getImpressionToken()+"&slotNum="+P+"&");}if(h.enableAutoTagging){ab.autoTagged=true;if(W){if(h.overwrite){for(R=1;R<9;R++){if(W[R]!=undefined){X.search=X.search.replace(W[R],ad);break;}}ab.overwritten=true;ac=true;}}else{if(Q){X.search=X.search.replace(/tag=/,"tag="+ad);ac=true;}else{X.search=X.search.replace(/\?/,"?tag="+ad+"&");ac=true;}}}if(N&&typeof h.overridableLinkCodes[N[2]]!=="undefined"){S=true;}if(N&&!S){O=N[2];}else{O=ac?a:I;}if(N){U.oldLinkCode=N[2];X.search=X.search.replace(N[2],O);}else{X.search=X.search.replace(/\?/,"?linkCode="+O+"&");}if(T=X.pathname.match(Y)){X.pathname=X.pathname.replace(T[1],"ref=as_at");}else{X.pathname=X.pathname+"ref=as_at";}if(ac){Z=ad;}else{if(typeof W!=="undefined"&&W instanceof Array&&W.length>=R+1&&typeof W[R]==="string"){Z=W[R];}else{Z="";}}if(C.shouldBeGeoRedirected()){ab.geoRedirected=true;n(X);}if(X.hasAttribute("data-amzn-asin")&&!X.search.match("creativeASIN")){X.search=X.search.replace(/\?/,"?creativeASIN="+X.getAttribute("data-amzn-asin")+"&");}M.push({pos:V,slotNum:P,linkCode:O,linkInfo:U,skipIRCall:aa,imprTag:Z});X.href=v.addAAXClickUrl(X.href);return ab;},A=function(N){if(N.href.match(b)){o=N.href.split(b);N.href=o[0]+"?"+decodeURIComponent(o[1]);}},t=function(O,N,R){var Q,P;for(Q=0;Q<O.length;Q++){for(P=0;P<N.length;P++){if(window.addEventListener){O[Q].addEventListener(N[P],R,false);}else{O[Q].attachEvent("on"+N[P],R);}}}},J=function(N,O){var P=false;t([N],["touchstart"],function(){P=false;});t([N],["touchmove"],function(){P=true;});t([N],["click","touchend"],function(Q){if(P){return;}N.setAttribute("href",O);});t([N],["auxclick","contextmenu"],function(Q){N.setAttribute("href",O);});t([N],["mouseup"],function(Q){if(Q.button===1||Q.ctrlKey){N.setAttribute("href",O);}});},L=function(){var N="";for(i=0;i<h.itemRefs.length;i++){if(typeof h.itemRefs[i].type!=="undefined"&&h.itemRefs[i].type==="ASIN"&&typeof h.itemRefs[i].sourceLink!=="undefined"&&String(h.itemRefs[i].sourceLink).match(G)!==null&&typeof h.itemRefs[i].destinationLink!=="undefined"){w[h.itemRefs[i].sourceLink]=h.itemRefs[i].destinationLink;if(l!==""){N=",";}l=l+N+h.itemRefs[i].sourceLink;u++;}}},f=function(O,N){B.trackElements([O],function(){if(typeof N!==undefined&&N.slotNum!==undefined&&(N.viewed===undefined||!N.viewed)){v.makeViewabilityCall(N.slotNum);N.viewed=true;}});},g=function(N,O){J(N,N.getAttribute("href"));N.setAttribute("href",O);},z=function(){var P,O,N;for(P=0;P<M.length;P++){O=M[P];N=O.pos;v.recordImpression(O.linkCode,O.imprTag,O.linkInfo,O.skipIRCall,O.slotNum);v.initialViewabilityCall(N.inViewPort,N.posX,N.posY,O.slotNum);}M=[];};if(h.locale!=undefined){q=h.locale;}else{q="US";}C.shouldBeGeoRedirected=function(){return h.enableGeoRedirection&&(h.region!==""&&h.region!==h.viewerCountry);};C.publisherCallBack=function(){window["amzn_assoc_client_cb_"+h.adUnitSlotNum]({type:"onload",data:{},widget:C});};C.decorateLinkElement=function(N){A(N);linkProperties=k(N,h.trackingId);f(N,linkProperties);return linkProperties;};C.tagLinks=function(ae){var ag,af,O,Z,ai,ab=[],ak=0,W,Y,ah,ad,aj,N,X,U=0,Q=0,aa=0,P=0,T=0,R=0,S,V,ac="";O=D[q];Z=j[q];ai=new RegExp("^(http|https)://(www|[\\w\\-\\.]+)?amazon\\.("+O+")/","i");if(Z){for(ak=0;ak<Z.length;ak++){W=O;if(O=="co.jp"){W="co.jp|jp";}ab[ak]=new RegExp("^(http|https)://(www\\.)?("+Z[ak]+")\\.("+W+")/","i");}}Y=ae.getElementsByTagName("a");if(!x){L();x=true;}for(ag=0;ag<Y.length;ag++){X=undefined;ah=String(Y[ag].href);if(ad=ah.match(ai)&&!c(ah)){X=C.decorateLinkElement(Y[ag]);g(Y[ag],ah);}else{if(h.isShortLinksSupported&&(aj=ah.match(G))!==null){K++;if(s!==""){ac=",";}s=s+ac+Y[ag].href;S=w[Y[ag].href];if(typeof S!=="undefined"){d++;Y[ag].setAttribute("href",S);X=C.decorateLinkElement(Y[ag]);g(Y[ag],ah);}else{if(C.shouldBeGeoRedirected()){X=C.decorateLinkElement(Y[ag]);g(Y[ag],ah);}}}else{for(N=0;N<ab.length;N++){if(ad=ah.match(ab[N])){C.decorateLinkElement(Y[ag]);g(Y[ag],ah);}}}}if(typeof X!=="undefined"){if(X.autoTagged){Q++;}if(X.overwritten){R++;}if(X.geoRedirected){aa++;}if(X.atf){P++;}else{T++;}U++;}}y.numLinks=U;y.numAutoTaggedLinks=Q;y.autoTaggingEnabled=h.enableAutoTagging;y.geoRedirectEnabled=h.enableGeoRedirection;y.numLinksATF=P;y.numLinksBTF=T;y.shortLinksInLivePool=l;y.shortLinksInPage=s;y.shortLinksInLivePoolCount=u;y.shortLinksInPageCount=K;y.shortLinksMatchCount=d;v.recordImpression(h.linkCode,h.trackingId,y);t([window],["load"],z);};return C;};
+    var spec = {
+        trackingId : "mitopencourse-20",
+        region : "US",
+        overwrite : false,
+        enableAutoTagging : false,
+        linkCode : "w49",
+        overridableLinkCodes :  {   "am1": ""   , "am2": ""   , "am3": ""   , "as1": ""   , "as2": ""   , "as3": ""   , "as4": ""   , "li1": ""   , "li2": ""   , "li3": ""   , "ll1": ""   , "ll2": ""   },
+        enableGeoRedirection : true,
+        redirectorEndPoint : "https://assoc-redirect.amazon.com/g/r/",
+        adUnitSlotNum : "0",
+        itemRefs : [],
+        isShortLinksSupported : true,
+        viewerCountry : "US"
+    }, trackingUtils = window.trackingUtils(
+        "1",
+        "//fls-na.amazon-adsystem.com/1/associates-ads/1/OP/r/json",
+        "//ir-na.amazon-adsystem.com/e/ir",
+        "https://aax-us-east.amazon-adsystem.com/x/px/QrXIVezFtrf0K2TQylk0PfgAAAFke-ls-AEAAAFKATFJ2M4/", "https://aax-us-east.amazon-adsystem.com/x/c/QrXIVezFtrf0K2TQylk0PfgAAAFke-ls-AEAAAFKATFJ2M4/", "RrUASIRmDQKlsRo2elO0iQ", undefined, undefined, undefined, true
+    );
+
+    window.amznAutoTagger = amznAutoTaggerMaker(spec, trackingUtils, window.elemTracker(trackingUtils));
+    window.amznAutoTagger.tagLinks(document);
+    window.amznAutoTagger.publisherCallBack();
+}());
+
+ //# sourceURL=dynscript-0.js</script><script type="text/javascript" async="" src="./Lecture Slides and Code _ Introduction to Computer Science and Programming in Python _ Electrical Engineering and Computer Science _ MIT OpenCourseWare_files/linkid.js"></script><script src="./Lecture Slides and Code _ Introduction to Computer Science and Programming in Python _ Electrical Engineering and Computer Science _ MIT OpenCourseWare_files/3534.js" async="" type="text/javascript"></script><script type="text/javascript" async="" src="./Lecture Slides and Code _ Introduction to Computer Science and Programming in Python _ Electrical Engineering and Computer Science _ MIT OpenCourseWare_files/f(1).txt"></script><script id="facebook-jssdk" src="./Lecture Slides and Code _ Introduction to Computer Science and Programming in Python _ Electrical Engineering and Computer Science _ MIT OpenCourseWare_files/sdk.js"></script><script async="" type="text/javascript" src="./Lecture Slides and Code _ Introduction to Computer Science and Programming in Python _ Electrical Engineering and Computer Science _ MIT OpenCourseWare_files/gpt.js"></script><script src="./Lecture Slides and Code _ Introduction to Computer Science and Programming in Python _ Electrical Engineering and Computer Science _ MIT OpenCourseWare_files/1024571997563699" async=""></script><script async="" src="./Lecture Slides and Code _ Introduction to Computer Science and Programming in Python _ Electrical Engineering and Computer Science _ MIT OpenCourseWare_files/fbevents.js"></script>
+        
+        <meta name="format-detection" content="telephone=no">  
+        
+        <title>Lecture Slides and Code | Introduction to Computer Science and Programming in Python | Electrical Engineering and Computer Science | MIT OpenCourseWare</title>
+    <!-- Begin Automatic Metadata Insertion -->
+    <meta content="6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016" name="WT.cg_n">
+    <meta content="Lecture Slides and Code" name="WT.cg_s">
+    <meta content="This section includes lecture slides and code for the class, including associated files." name="Description">
+    <meta content="Bell, Ana" name="Author">
+    <meta content="Grimson, Eric" name="Author">
+    <meta content="Guttag, John" name="Author">
+    <meta content="6.0001,Computation,Branching,Iteration,Strings,Guess and check,Approximations,Bisection,Decomposition,Abstractions,Functions,Tuples,Lists,Aliasing,Mutability,Recursion,Dictionaries,Testing,Debugging,Exceptions,Assertions,Object Oriented Programming,Python Classes,Inheritance,Program Efficiency,Searching,Sorting,Computer Science,Algorithms and Data Structures,Programming Languages" name="keywords">
+    <meta content="6.0001 Introduction to Computer Science and Programming in Python | Lecture Slides and Code" name="Search_Display">
+    <meta content="Computer Science" itemprop="about">
+    <meta content="Algorithms and Data Structures" itemprop="about">
+    <meta content="Programming Languages" itemprop="about">
+    <meta content="This section includes lecture slides and code for the class, including associated files." property="og:description">
+    <meta content="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/6-0001f16.jpg" property="og:image">
+    <!-- End Automatic Metadata Insertion -->
+
+	<link title="default" rel="stylesheet" type="text/css" href="./Lecture Slides and Code _ Introduction to Computer Science and Programming in Python _ Electrical Engineering and Computer Science _ MIT OpenCourseWare_files/grid.css"><link title="default" rel="stylesheet" type="text/css" href="./Lecture Slides and Code _ Introduction to Computer Science and Programming in Python _ Electrical Engineering and Computer Science _ MIT OpenCourseWare_files/base.css"><link title="default" rel="stylesheet" type="text/css" href="./Lecture Slides and Code _ Introduction to Computer Science and Programming in Python _ Electrical Engineering and Computer Science _ MIT OpenCourseWare_files/menu.css"><link title="default" rel="stylesheet" type="text/css" href="./Lecture Slides and Code _ Introduction to Computer Science and Programming in Python _ Electrical Engineering and Computer Science _ MIT OpenCourseWare_files/jquery.bubblepopup.css"><link title="default" rel="stylesheet" type="text/css" href="./Lecture Slides and Code _ Introduction to Computer Science and Programming in Python _ Electrical Engineering and Computer Science _ MIT OpenCourseWare_files/search.css"><link title="default" rel="stylesheet" type="text/css" href="./Lecture Slides and Code _ Introduction to Computer Science and Programming in Python _ Electrical Engineering and Computer Science _ MIT OpenCourseWare_files/courses.css"><link title="default" rel="stylesheet" type="text/css" href="./Lecture Slides and Code _ Introduction to Computer Science and Programming in Python _ Electrical Engineering and Computer Science _ MIT OpenCourseWare_files/courses_new.css"><link title="default" rel="stylesheet" type="text/css" href="./Lecture Slides and Code _ Introduction to Computer Science and Programming in Python _ Electrical Engineering and Computer Science _ MIT OpenCourseWare_files/help-popup.css">
+	<link href="https://ocw.mit.edu/xml/ocwcc.rdf" type="application/rdf+xml" rel="metadata">
+	<link rel="canonical" href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/lecture-slides-code/">
+	<link rel="apple-touch-icon" href="https://ocw.mit.edu/images/apple-touch-icon.png">
+	
+	
+      
+	
+	<script async="" src="./Lecture Slides and Code _ Introduction to Computer Science and Programming in Python _ Electrical Engineering and Computer Science _ MIT OpenCourseWare_files/analytics.js"></script><script type="text/javascript" src="./Lecture Slides and Code _ Introduction to Computer Science and Programming in Python _ Electrical Engineering and Computer Science _ MIT OpenCourseWare_files/jquery.js"></script>
+	<script type="text/javascript" src="./Lecture Slides and Code _ Introduction to Computer Science and Programming in Python _ Electrical Engineering and Computer Science _ MIT OpenCourseWare_files/jwplayer.js"></script>
+	<script type="text/javascript" src="./Lecture Slides and Code _ Introduction to Computer Science and Programming in Python _ Electrical Engineering and Computer Science _ MIT OpenCourseWare_files/ocw-media-utils.js"></script>
+	<script type="text/javascript" src="./Lecture Slides and Code _ Introduction to Computer Science and Programming in Python _ Electrical Engineering and Computer Science _ MIT OpenCourseWare_files/ocw.js"></script>
+	<script type="text/javascript" src="./Lecture Slides and Code _ Introduction to Computer Science and Programming in Python _ Electrical Engineering and Computer Science _ MIT OpenCourseWare_files/googleanalytics.js"></script>
+	<script type="text/javascript" src="./Lecture Slides and Code _ Introduction to Computer Science and Programming in Python _ Electrical Engineering and Computer Science _ MIT OpenCourseWare_files/jquery.bubblepopup.min.js"></script>
+	<script type="text/javascript" src="./Lecture Slides and Code _ Introduction to Computer Science and Programming in Python _ Electrical Engineering and Computer Science _ MIT OpenCourseWare_files/expandy.js"></script>
+	<script type="text/javascript" src="./Lecture Slides and Code _ Introduction to Computer Science and Programming in Python _ Electrical Engineering and Computer Science _ MIT OpenCourseWare_files/onejs"></script><link rel="preload" href="./Lecture Slides and Code _ Introduction to Computer Science and Programming in Python _ Electrical Engineering and Computer Science _ MIT OpenCourseWare_files/f(2).txt" as="script"><script type="text/javascript" src="./Lecture Slides and Code _ Introduction to Computer Science and Programming in Python _ Electrical Engineering and Computer Science _ MIT OpenCourseWare_files/f(2).txt"></script><script src="./Lecture Slides and Code _ Introduction to Computer Science and Programming in Python _ Electrical Engineering and Computer Science _ MIT OpenCourseWare_files/pubads_impl_225.js" async=""></script><script src="./Lecture Slides and Code _ Introduction to Computer Science and Programming in Python _ Electrical Engineering and Computer Science _ MIT OpenCourseWare_files/jsapi" type="text/javascript"></script><link type="text/css" href="./Lecture Slides and Code _ Introduction to Computer Science and Programming in Python _ Electrical Engineering and Computer Science _ MIT OpenCourseWare_files/default+en.css" rel="stylesheet"><link type="text/css" href="./Lecture Slides and Code _ Introduction to Computer Science and Programming in Python _ Electrical Engineering and Computer Science _ MIT OpenCourseWare_files/espresso.css" rel="stylesheet"><script type="text/javascript" src="./Lecture Slides and Code _ Introduction to Computer Science and Programming in Python _ Electrical Engineering and Computer Science _ MIT OpenCourseWare_files/default+en.I.js"></script><style type="text/css">.at-icon{fill:#fff;border:0}.at-icon-wrapper{display:inline-block;overflow:hidden}a .at-icon-wrapper{cursor:pointer}.at-rounded,.at-rounded-element .at-icon-wrapper{border-radius:12%}.at-circular,.at-circular-element .at-icon-wrapper{border-radius:50%}.addthis_32x32_style .at-icon{width:2pc;height:2pc}.addthis_24x24_style .at-icon{width:24px;height:24px}.addthis_20x20_style .at-icon{width:20px;height:20px}.addthis_16x16_style .at-icon{width:1pc;height:1pc}#at16lb{display:none;position:absolute;top:0;left:0;width:100%;height:100%;z-index:1001;background-color:#000;opacity:.001}#at_complete,#at_error,#at_share,#at_success{position:static!important}.at15dn{display:none}#at15s,#at16p,#at16p form input,#at16p label,#at16p textarea,#at_share .at_item{font-family:arial,helvetica,tahoma,verdana,sans-serif!important;font-size:9pt!important;outline-style:none;outline-width:0;line-height:1em}* html #at15s.mmborder{position:absolute!important}#at15s.mmborder{position:fixed!important;width:250px!important}#at15s{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABtJREFUeNpiZGBgaGAgAjAxEAlGFVJHIUCAAQDcngCUgqGMqwAAAABJRU5ErkJggg==);float:none;line-height:1em;margin:0;overflow:visible;padding:5px;text-align:left;position:absolute}#at15s a,#at15s span{outline:0;direction:ltr;text-transform:none}#at15s .at-label{margin-left:5px}#at15s .at-icon-wrapper{width:1pc;height:1pc;vertical-align:middle}#at15s .at-icon{width:1pc;height:1pc}.at4-icon{display:inline-block;background-repeat:no-repeat;background-position:top left;margin:0;overflow:hidden;cursor:pointer}.addthis_16x16_style .at4-icon,.addthis_default_style .at4-icon,.at4-icon,.at-16x16{width:1pc;height:1pc;line-height:1pc;background-size:1pc!important}.addthis_32x32_style .at4-icon,.at-32x32{width:2pc;height:2pc;line-height:2pc;background-size:2pc!important}.addthis_24x24_style .at4-icon,.at-24x24{width:24px;height:24px;line-height:24px;background-size:24px!important}.addthis_20x20_style .at4-icon,.at-20x20{width:20px;height:20px;line-height:20px;background-size:20px!important}.at4-icon.circular,.circular .at4-icon,.circular.aticon{border-radius:50%}.at4-icon.rounded,.rounded .at4-icon{border-radius:4px}.at4-icon-left{float:left}#at15s .at4-icon{text-indent:20px;padding:0;overflow:visible;white-space:nowrap;background-size:1pc;width:1pc;height:1pc;background-position:top left;display:inline-block;line-height:1pc}.addthis_vertical_style .at4-icon,.at4-follow-container .at4-icon{margin-right:5px}html>body #at15s{width:250px!important}#at15s.atm{background:none!important;padding:0!important;width:10pc!important}#at15s_inner{background:#fff;border:1px solid #fff;margin:0}#at15s_head{position:relative;background:#f2f2f2;padding:4px;cursor:default;border-bottom:1px solid #e5e5e5}.at15s_head_success{background:#cafd99!important;border-bottom:1px solid #a9d582!important}.at15s_head_success a,.at15s_head_success span{color:#000!important;text-decoration:none}#at15s_brand,#at15sptx,#at16_brand{position:absolute}#at15s_brand{top:4px;right:4px}.at15s_brandx{right:20px!important}a#at15sptx{top:4px;right:4px;text-decoration:none;color:#4c4c4c;font-weight:700}#at15sptx:hover{text-decoration:underline}#at16_brand{top:5px;right:30px;cursor:default}#at_hover{padding:4px}#at_hover .at_item,#at_share .at_item{background:#fff!important;float:left!important;color:#4c4c4c!important}#at_share .at_item .at-icon-wrapper{margin-right:5px}#at_hover .at_bold{font-weight:700;color:#000!important}#at_hover .at_item{width:7pc!important;padding:2px 3px!important;margin:1px;text-decoration:none!important}#at_hover .at_item.athov,#at_hover .at_item:focus,#at_hover .at_item:hover{margin:0!important}#at_hover .at_item.athov,#at_hover .at_item:focus,#at_hover .at_item:hover,#at_share .at_item.athov,#at_share .at_item:hover{background:#f2f2f2!important;border:1px solid #e5e5e5;color:#000!important;text-decoration:none}.ipad #at_hover .at_item:focus{background:#fff!important;border:1px solid #fff}.at15t{display:block!important;height:1pc!important;line-height:1pc!important;padding-left:20px!important;background-position:0 0;text-align:left}.addthis_button,.at15t{cursor:pointer}.addthis_toolbox a.at300b,.addthis_toolbox a.at300m{width:auto}.addthis_toolbox a{margin-bottom:5px;line-height:initial}.addthis_toolbox.addthis_vertical_style{width:200px}.addthis_button_facebook_like .fb_iframe_widget{line-height:100%}.addthis_button_facebook_like iframe.fb_iframe_widget_lift{max-width:none}.addthis_toolbox a.addthis_button_counter,.addthis_toolbox a.addthis_button_facebook_like,.addthis_toolbox a.addthis_button_facebook_send,.addthis_toolbox a.addthis_button_facebook_share,.addthis_toolbox a.addthis_button_foursquare,.addthis_toolbox a.addthis_button_google_plusone,.addthis_toolbox a.addthis_button_linkedin_counter,.addthis_toolbox a.addthis_button_pinterest_pinit,.addthis_toolbox a.addthis_button_stumbleupon_badge,.addthis_toolbox a.addthis_button_tweet{display:inline-block}.at-share-tbx-element .google_plusone_iframe_widget>span>div{vertical-align:top!important}.addthis_toolbox span.addthis_follow_label{display:none}.addthis_toolbox.addthis_vertical_style span.addthis_follow_label{display:block;white-space:nowrap}.addthis_toolbox.addthis_vertical_style a{display:block}.addthis_toolbox.addthis_vertical_style.addthis_32x32_style a{line-height:2pc;height:2pc}.addthis_toolbox.addthis_vertical_style .at300bs{margin-right:4px;float:left}.addthis_toolbox.addthis_20x20_style span{line-height:20px}.addthis_toolbox.addthis_32x32_style span{line-height:2pc}.addthis_toolbox.addthis_pill_combo_style .addthis_button_compact .at15t_compact,.addthis_toolbox.addthis_pill_combo_style a{float:left}.addthis_toolbox.addthis_pill_combo_style a.addthis_button_tweet{margin-top:-2px}.addthis_toolbox.addthis_pill_combo_style .addthis_button_compact .at15t_compact{margin-right:4px}.addthis_default_style .addthis_separator{margin:0 5px;display:inline}div.atclear{clear:both}.addthis_default_style .addthis_separator,.addthis_default_style .at4-icon,.addthis_default_style .at300b,.addthis_default_style .at300bo,.addthis_default_style .at300bs,.addthis_default_style .at300m{float:left}.at300b img,.at300bo img{border:0}a.at300b .at4-icon,a.at300m .at4-icon{display:block}.addthis_default_style .at300b,.addthis_default_style .at300bo,.addthis_default_style .at300m{padding:0 2px}.at300b,.at300bo,.at300bs,.at300m{cursor:pointer}.addthis_button_facebook_like.at300b:hover,.addthis_button_facebook_like.at300bs:hover,.addthis_button_facebook_send.at300b:hover,.addthis_button_facebook_send.at300bs:hover{opacity:1}.addthis_20x20_style .at15t,.addthis_20x20_style .at300bs{overflow:hidden;display:block;height:20px!important;width:20px!important;line-height:20px!important}.addthis_32x32_style .at15t,.addthis_32x32_style .at300bs{overflow:hidden;display:block;height:2pc!important;width:2pc!important;line-height:2pc!important}.at300bs{overflow:hidden;display:block;background-position:0 0;height:1pc;width:1pc;line-height:1pc!important}.addthis_default_style .at15t_compact,.addthis_default_style .at15t_expanded{margin-right:4px}#at_share .at_item{width:123px!important;padding:4px;margin-right:2px;border:1px solid #fff}#at16p{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABtJREFUeNpiZGBgaGAgAjAxEAlGFVJHIUCAAQDcngCUgqGMqwAAAABJRU5ErkJggg==);z-index:10000001;position:absolute;top:50%;left:50%;width:300px;padding:10px;margin:0 auto;margin-top:-185px;margin-left:-155px;font-family:arial,helvetica,tahoma,verdana,sans-serif;font-size:9pt;color:#5e5e5e}#at_share{margin:0;padding:0}#at16pt{position:relative;background:#f2f2f2;height:13px;padding:5px 10px}#at16pt a,#at16pt h4{font-weight:700}#at16pt h4{display:inline;margin:0;padding:0;font-size:9pt;color:#4c4c4c;cursor:default}#at16pt a{position:absolute;top:5px;right:10px;color:#4c4c4c;text-decoration:none;padding:2px}#at15sptx:focus,#at16pt a:focus{outline:thin dotted}#at15s #at16pf a{top:1px}#_atssh{width:1px!important;height:1px!important;border:0!important}.atm{width:10pc!important;padding:0;margin:0;line-height:9pt;letter-spacing:normal;font-family:arial,helvetica,tahoma,verdana,sans-serif;font-size:9pt;color:#444;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABtJREFUeNpiZGBgaGAgAjAxEAlGFVJHIUCAAQDcngCUgqGMqwAAAABJRU5ErkJggg==);padding:4px}.atm-f{text-align:right;border-top:1px solid #ddd;padding:5px 8px}.atm-i{background:#fff;border:1px solid #d5d6d6;padding:0;margin:0;box-shadow:1px 1px 5px rgba(0,0,0,.15)}.atm-s{margin:0!important;padding:0!important}.atm-s a:focus{border:transparent;outline:0;transition:none}#at_hover.atm-s a,.atm-s a{display:block;text-decoration:none;padding:4px 10px;color:#235dab!important;font-weight:400;font-style:normal;transition:none}#at_hover.atm-s .at_bold{color:#235dab!important}#at_hover.atm-s a:hover,.atm-s a:hover{background:#2095f0;text-decoration:none;color:#fff!important}#at_hover.atm-s .at_bold{font-weight:700}#at_hover.atm-s a:hover .at_bold{color:#fff!important}.atm-s a .at-label{vertical-align:middle;margin-left:5px;direction:ltr}.at_PinItButton{display:block;width:40px;height:20px;padding:0;margin:0;background-image:url(//s7.addthis.com/static/t00/pinit00.png);background-repeat:no-repeat}.at_PinItButton:hover{background-position:0 -20px}.addthis_toolbox .addthis_button_pinterest_pinit{position:relative}.at-share-tbx-element .fb_iframe_widget span{vertical-align:baseline!important}#at16pf{height:auto;text-align:right;padding:4px 8px}.at-privacy-info{position:absolute;left:7px;bottom:7px;cursor:pointer;text-decoration:none;font-family:helvetica,arial,sans-serif;font-size:10px;line-height:9pt;letter-spacing:.2px;color:#666}.at-privacy-info:hover{color:#000}.body .wsb-social-share .wsb-social-share-button-vert{padding-top:0;padding-bottom:0}.body .wsb-social-share.addthis_counter_style .addthis_button_tweet.wsb-social-share-button{padding-top:40px}.body .wsb-social-share.addthis_counter_style .addthis_button_google_plusone.wsb-social-share-button{padding-top:0}.body .wsb-social-share.addthis_counter_style .addthis_button_facebook_like.wsb-social-share-button{padding-top:21px}@media print{#at4-follow,#at4-share,#at4-thankyou,#at4-whatsnext,#at4m-mobile,#at15s,.at4,.at4-recommended{display:none!important}}@media screen and (max-width:400px){.at4win{width:100%}}@media screen and (max-height:700px) and (max-width:400px){.at4-thankyou-inner .at4-recommended-container{height:122px;overflow:hidden}.at4-thankyou-inner .at4-recommended .at4-recommended-item:first-child{border-bottom:1px solid #c5c5c5}}</style><style type="text/css">.at-branding-logo{font-family:helvetica,arial,sans-serif;text-decoration:none;font-size:10px;display:inline-block;margin:2px 0;letter-spacing:.2px}.at-branding-logo .at-branding-icon{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAMAAAC67D+PAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAZQTFRF////+GlNUkcc1QAAAB1JREFUeNpiYIQDBjQmAwMmkwEM0JnY1WIxFyDAABGeAFEudiZsAAAAAElFTkSuQmCC")}.at-branding-logo .at-branding-icon,.at-branding-logo .at-privacy-icon{display:inline-block;height:10px;width:10px;margin-left:4px;margin-right:3px;margin-bottom:-1px;background-repeat:no-repeat}.at-branding-logo .at-privacy-icon{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAKCAMAAABR24SMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABhQTFRF8fr9ot/xXcfn2/P5AKva////////AKTWodjhjAAAAAd0Uk5T////////ABpLA0YAAAA6SURBVHjaJMzBDQAwCAJAQaj7b9xifV0kUKJ9ciWxlzWEWI5gMF65KUTv0VKkjVeTerqE/x7+9BVgAEXbAWI8QDcfAAAAAElFTkSuQmCC")}.at-branding-logo span{text-decoration:none}.at-branding-logo .at-branding-addthis,.at-branding-logo .at-branding-powered-by{color:#666}.at-branding-logo .at-branding-addthis:hover{color:#333}.at-cv-with-image .at-branding-addthis,.at-cv-with-image .at-branding-addthis:hover{color:#fff}a.at-branding-logo:visited{color:initial}.at-branding-info{display:inline-block;padding:0 5px;color:#666;border:1px solid #666;border-radius:50%;font-size:10px;line-height:9pt;opacity:.7;transition:all .3s ease;text-decoration:none}.at-branding-info span{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.at-branding-info:before{content:'i';font-family:Times New Roman}.at-branding-info:hover{color:#0780df;border-color:#0780df}</style><style type="text/css">.gsc-control-cse{font-family:Arial, sans-serif;border-color:#FFFFFF;background-color:#FFFFFF}.gsc-control-cse .gsc-table-result{font-family:Arial, sans-serif}input.gsc-input,.gsc-input-box,.gsc-input-box-hover,.gsc-input-box-focus{border-color:#CCCCCC}.gsc-search-button-v2,.gsc-search-button-v2:hover,.gsc-search-button-v2:focus{border-color:#000000;background-color:#B30838;background-image:none;filter:none}.gsc-search-button-v2 svg{fill:#FFFFFF}.gsc-tabHeader.gsc-tabhInactive{border-color:#999999;background-color:#461200}.gsc-tabHeader.gsc-tabhActive{border-color:#000000;border-bottom-color:#B30838;background-color:#B30838}.gsc-tabsArea{border-color:#000000}.gsc-webResult.gsc-result,.gsc-results .gsc-imageResult{border-color:#FFFFFF;background-color:#FFFFFF}.gsc-webResult.gsc-result:hover,.gsc-imageResult:hover{border-color:#FFFFFF;background-color:#FFFFFF}.gs-webResult.gs-result a.gs-title:link,.gs-webResult.gs-result a.gs-title:link b,.gs-imageResult a.gs-title:link,.gs-imageResult a.gs-title:link b{color:#B30838}.gs-webResult.gs-result a.gs-title:visited,.gs-webResult.gs-result a.gs-title:visited b,.gs-imageResult a.gs-title:visited,.gs-imageResult a.gs-title:visited b{color:#B30838}.gs-webResult.gs-result a.gs-title:hover,.gs-webResult.gs-result a.gs-title:hover b,.gs-imageResult a.gs-title:hover,.gs-imageResult a.gs-title:hover b{color:#E69138}.gs-webResult.gs-result a.gs-title:active,.gs-webResult.gs-result a.gs-title:active b,.gs-imageResult a.gs-title:active,.gs-imageResult a.gs-title:active b{color:#B30838}.gsc-cursor-page{color:#B30838}a.gsc-trailing-more-results:link{color:#B30838}.gs-webResult .gs-snippet,.gs-imageResult .gs-snippet,.gs-fileFormatType{color:#000000}.gs-webResult div.gs-visibleUrl,.gs-imageResult div.gs-visibleUrl{color:#CCCCCC}.gs-webResult div.gs-visibleUrl-short{color:#CCCCCC}.gs-webResult div.gs-visibleUrl-short{display:none}.gs-webResult div.gs-visibleUrl-long{display:block}.gs-promotion div.gs-visibleUrl-short{display:none}.gs-promotion div.gs-visibleUrl-long{display:block}.gsc-cursor-box{border-color:#FFFFFF}.gsc-results .gsc-cursor-box .gsc-cursor-page{border-color:#999999;background-color:#FFFFFF;color:#B30838}.gsc-results .gsc-cursor-box .gsc-cursor-current-page{border-color:#000000;background-color:#B30838;color:#B30838}.gsc-webResult.gsc-result.gsc-promotion{border-color:#FFFFFF;background-color:#FFFFFF}.gsc-completion-title{color:#B30838}.gsc-completion-snippet{color:#000000}.gs-promotion a.gs-title:link,.gs-promotion a.gs-title:link *,.gs-promotion .gs-snippet a:link{color:#B30838}.gs-promotion a.gs-title:visited,.gs-promotion a.gs-title:visited *,.gs-promotion .gs-snippet a:visited{color:#B30838}.gs-promotion a.gs-title:hover,.gs-promotion a.gs-title:hover *,.gs-promotion .gs-snippet a:hover{color:#E69138}.gs-promotion a.gs-title:active,.gs-promotion a.gs-title:active *,.gs-promotion .gs-snippet a:active{color:#B30838}.gs-promotion .gs-snippet,.gs-promotion .gs-title .gs-promotion-title-right,.gs-promotion .gs-title .gs-promotion-title-right *{color:#000000}.gs-promotion .gs-visibleUrl,.gs-promotion .gs-visibleUrl-short{color:#CCCCCC}</style><style type="text/css">.gscb_a{display:inline-block;font:27px/13px arial,sans-serif}.gsst_a .gscb_a{color:#a1b9ed;cursor:pointer}.gsst_a:hover .gscb_a,.gsst_a:focus .gscb_a{color:#36c}.gsst_a{display:inline-block}.gsst_a{cursor:pointer;padding:0 4px}.gsst_a:hover{text-decoration:none!important}.gsst_b{font-size:16px;padding:0 2px;position:relative;user-select:none;-webkit-user-select:none;white-space:nowrap}.gsst_e{opacity:0.55;}.gsst_a:hover .gsst_e,.gsst_a:focus .gsst_e{opacity:0.72;}.gsst_a:active .gsst_e{opacity:1;}.gsst_f{background:white;text-align:left}.gsst_g{background-color:white;border:1px solid #ccc;border-top-color:#d9d9d9;box-shadow:0 2px 4px rgba(0,0,0,0.2);-webkit-box-shadow:0 2px 4px rgba(0,0,0,0.2);margin:-1px -3px;padding:0 6px}.gsst_h{background-color:white;height:1px;margin-bottom:-1px;position:relative;top:-1px}.gsib_a{width:100%;padding:4px 6px 0}.gsib_a,.gsib_b{vertical-align:top}.gssb_c{border:0;position:absolute;z-index:989}.gssb_e{border:1px solid #ccc;border-top-color:#d9d9d9;box-shadow:0 2px 4px rgba(0,0,0,0.2);-webkit-box-shadow:0 2px 4px rgba(0,0,0,0.2);cursor:default}.gssb_f{visibility:hidden;white-space:nowrap}.gssb_k{border:0;display:block;position:absolute;top:0;z-index:988}.gsdd_a{border:none!important}.gsq_a{padding:0}.gscsep_a{display:none}.gssb_a{padding:0 7px}.gssb_a,.gssb_a td{white-space:nowrap;overflow:hidden;line-height:22px}#gssb_b{font-size:11px;color:#36c;text-decoration:none}#gssb_b:hover{font-size:11px;color:#36c;text-decoration:underline}.gssb_g{text-align:center;padding:8px 0 7px;position:relative}.gssb_h{font-size:15px;height:28px;margin:0.2em;-webkit-appearance:button}.gssb_i{background:#eee}.gss_ifl{visibility:hidden;padding-left:5px}.gssb_i .gss_ifl{visibility:visible}a.gssb_j{font-size:13px;color:#36c;text-decoration:none;line-height:100%}a.gssb_j:hover{text-decoration:underline}.gssb_l{height:1px;background-color:#e5e5e5}.gssb_m{color:#000;background:#fff}.gsfe_a{border:1px solid #b9b9b9;border-top-color:#a0a0a0;box-shadow:inset 0px 1px 2px rgba(0,0,0,0.1);-moz-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.1);-webkit-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.1);}.gsfe_b{border:1px solid #4d90fe;outline:none;box-shadow:inset 0px 1px 2px rgba(0,0,0,0.3);-moz-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.3);-webkit-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.3);}.gssb_a{padding:0 9px}.gsib_a{padding-right:8px;padding-left:8px}.gsst_a{padding-top:5.5px}.gssb_e{border:0}.gssb_l{margin:5px 0}input.gsc-input::-webkit-input-placeholder{font-size:14px}input.gsc-input:-moz-placeholder{font-size:14px}input.gsc-input::-moz-placeholder{font-size:14px}input.gsc-input:-ms-input-placeholder{font-size:14px}input.gsc-input:focus::-webkit-input-placeholder{color:transparent}input.gsc-input:focus:-moz-placeholder{color:transparent}input.gsc-input:focus::-moz-placeholder{color:transparent}input.gsc-input:focus:-ms-input-placeholder{color:transparent}.gssb_c .gsc-completion-container{position:static}.gssb_c{z-index:5000}.gsc-completion-container table{background:transparent;font-size:inherit;font-family:inherit}.gssb_c > tbody > tr,.gssb_c > tbody > tr > td,.gssb_d,.gssb_d > tbody > tr,.gssb_d > tbody > tr > td,.gssb_e,.gssb_e > tbody > tr,.gssb_e > tbody > tr > td{padding:0;margin:0;border:0}.gssb_a table,.gssb_a table tr,.gssb_a table tr td{padding:0;margin:0;border:0}</style><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_loader{background-color:#f6f7f9;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{width:auto;height:auto;min-height:initial;min-width:initial;background:none}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{color:#fff;display:block;padding-top:20px;clear:both;font-size:18px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;bottom:0;left:0;right:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:-webkit-sticky;top:0}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #29487d;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f9;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-repeat:no-repeat;background-position:50% 50%;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}
+.fb_customer_chat_bounce_in_v1{animation-duration:250ms;animation-name:fb_bounce_in_v1}.fb_customer_chat_bounce_out_v1{animation-duration:250ms;animation-name:fb_bounce_out_v1}.fb_customer_chat_bounce_in_v2{animation-duration:300ms;animation-name:fb_bounce_in_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_v2{animation-duration:300ms;animation-name:fb_bounce_out_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_in_v2_mobile_chat_started{animation-duration:300ms;animation-name:fb_bounce_in_v2_mobile_chat_started;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_v2_mobile_chat_started{animation-duration:300ms;animation-name:fb_bounce_out_v2_mobile_chat_started;transition-timing-function:ease-in}.fb_customer_chat_bubble_pop_in{animation-duration:250ms;animation-name:fb_customer_chat_bubble_bounce_in_animation}.fb_customer_chat_bubble_animated_no_badge{box-shadow:0 3px 12px rgba(0, 0, 0, .15);transition:box-shadow 150ms linear}.fb_customer_chat_bubble_animated_no_badge:hover{box-shadow:0 5px 24px rgba(0, 0, 0, .3)}.fb_customer_chat_bubble_animated_with_badge{box-shadow:-5px 4px 14px rgba(0, 0, 0, .15);transition:box-shadow 150ms linear}.fb_customer_chat_bubble_animated_with_badge:hover{box-shadow:-5px 8px 24px rgba(0, 0, 0, .2)}.fb_invisible_flow{display:inherit;height:0;overflow-x:hidden;width:0}.fb_mobile_overlay_active{background-color:#fff;height:100%;overflow:hidden;position:fixed;visibility:hidden;width:100%}@keyframes fb_bounce_in_v1{0%{opacity:0;transform:scale(.8, .8);transform-origin:bottom right}80%{opacity:.8;transform:scale(1.03, 1.03)}100%{opacity:1;transform:scale(1, 1)}}@keyframes fb_bounce_in_v2{0%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}50%{transform:scale(1.03, 1.03);transform-origin:bottom right}100%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}}@keyframes fb_bounce_in_v2_mobile_chat_started{0%{opacity:0;top:20px}100%{opacity:1;top:0}}@keyframes fb_bounce_out_v1{from{opacity:1}to{opacity:0}}@keyframes fb_bounce_out_v2{0%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}100%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}}@keyframes fb_bounce_out_v2_mobile_chat_started{0%{opacity:1;top:0}100%{opacity:0;top:20px}}@keyframes fb_customer_chat_bubble_bounce_in_animation{0%{bottom:6pt;opacity:0;transform:scale(0, 0);transform-origin:center}70%{bottom:18pt;opacity:1;transform:scale(1.2, 1.2)}100%{transform:scale(1, 1)}}</style></head><body itemscope="" itemtype="http://schema.org/WebPage"><div id="amzn_assoc_ad_div_adunit_0"></div>
+	<script type="text/javascript" src="./Lecture Slides and Code _ Introduction to Computer Science and Programming in Python _ Electrical Engineering and Computer Science _ MIT OpenCourseWare_files/bubble-popup.js"></script>
+	<script type="text/javascript" src="./Lecture Slides and Code _ Introduction to Computer Science and Programming in Python _ Electrical Engineering and Computer Science _ MIT OpenCourseWare_files/help-popup.js"></script>
+	<script type="text/javascript"> ga('set', 'contentGroup1','6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016'); </script>
+	
+	
+    
+    
+    
+    
+    
+    
+    
+      
+    
+	
+		<!-- Facebook Pixel Code -->
+		<script>
+		!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+		n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+		n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+		t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+		document,'script','//connect.facebook.net/en_US/fbevents.js');
+
+		fbq('init', '1024571997563699');
+		fbq('track', "PageView");
+		fbq('track', "ViewContent");
+		</script>
+
+		<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1024571997563699&amp;ev=PageView&amp;noscript=1" /></noscript>
+		<!-- End Facebook Pixel Code -->	
+    	<script type="text/javascript">
+			setTimeout(function(){var a=document.createElement("script");
+			var b=document.getElementsByTagName("script")[0];
+			a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0017/3534.js?"+Math.floor(new Date().getTime()/3600000);
+			a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+			
+			//google ads script for footer logos
+			var googletag = googletag || {};
+			googletag.cmd = googletag.cmd || [];
+			(function() {
+			var gads = document.createElement('script');
+			gads.async = true;
+			gads.type = 'text/javascript';
+			var useSSL = 'https:' == document.location.protocol;
+			gads.src = (useSSL ? 'https:' : 'http:') +
+			'//www.googletagservices.com/tag/js/gpt.js';
+			var node = document.getElementsByTagName('script')[0];
+			node.parentNode.insertBefore(gads, node);
+			})();
+            
+            //script for sending the pageview request to GA server
+			ga('send', 'pageview', location.pathname + location.search + location.hash);
+		</script>		
+		<script type="text/javascript">		
+			googletag.cmd.push(function() {
+			googletag.defineSlot('/1064917/HOME_CORP_LOGO_1', [145, 53], 'div-gpt-ad-1388181177156-0').addService(googletag.pubads());
+			googletag.defineSlot('/1064917/HOME_CORP_LOGO_2', [145, 53], 'div-gpt-ad-1388181177156-1').addService(googletag.pubads());
+			googletag.defineSlot('/1064917/HOME_CORP_LOGO_3', [145, 53], 'div-gpt-ad-1388181177156-2').addService(googletag.pubads());
+			googletag.defineSlot('/1064917/HOME_CORP_LOGO_4', [145, 53], 'div-gpt-ad-1388181177156-3').addService(googletag.pubads());
+			googletag.defineSlot('/1064917/HOME_CORP_LOGO_5', [145, 53], 'div-gpt-ad-1388181177156-4').addService(googletag.pubads());
+			googletag.defineSlot('/1064917/HOME_CORP_LOGO_6', [145, 53], 'div-gpt-ad-1388181177156-5').addService(googletag.pubads());
+			googletag.pubads().enableSingleRequest();		
+			googletag.enableServices();			
+			});
+		</script>		 	
+		
+	   
+		 
+
+<div id="fbQuote" name="fbQuote">
+        <script>
+          window.fbAsyncInit = function() {
+            FB.init({
+              appId            : '549343822066688',
+              autoLogAppEvents : true,
+              xfbml            : true,
+              version          : 'v2.11'
+            });
+	        FB.AppEvents.logEvent('Share',1);
+          };
+          (function(d, s, id){
+             var js, fjs = d.getElementsByTagName(s)[0];
+             if (d.getElementById(id)) {return;}
+             js = d.createElement(s); js.id = id;
+             js.src = "//connect.facebook.net/en_US/sdk.js";
+             fjs.parentNode.insertBefore(js, fjs);
+           }(document, 'script', 'facebook-jssdk'));
+        </script>
+<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./Lecture Slides and Code _ Introduction to Computer Science and Programming in Python _ Electrical Engineering and Computer Science _ MIT OpenCourseWare_files/1e2RywyANNe.html" style="border: none;"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div><div class="fb-quote no-copy fb_iframe_widget" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=549343822066688&amp;container_width=1284&amp;href=https%3A%2F%2Focw.mit.edu%2Fcourses%2Felectrical-engineering-and-computer-science%2F6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016%2Flecture-slides-code%2F&amp;locale=en_US&amp;sdk=joey" style="position: absolute; left: -9999px;"><span style="vertical-align: bottom; width: 169px; height: 48px;"><iframe name="f74eafdfef2c18" width="1000px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" title="fb:quote Facebook Social Plugin" src="./Lecture Slides and Code _ Introduction to Computer Science and Programming in Python _ Electrical Engineering and Computer Science _ MIT OpenCourseWare_files/quote.html" style="border: none; visibility: visible; width: 169px; height: 48px;" class=""></iframe></span></div><script src="./Lecture Slides and Code _ Introduction to Computer Science and Programming in Python _ Electrical Engineering and Computer Science _ MIT OpenCourseWare_files/addthis_widget.js"></script></div>
+
+
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      
+    
+        
+	
+
+        <header id="top">
+			<div id="grid">
+				
+				
+					
+<div id="portletwrapper-6f63772e746f70706f72746c65746d616e616765720a636f6e746578740a2f506c6f6e650a736974652d686561646572" class="portletWrapper kssattr-portlethash-6f63772e746f70706f72746c65746d616e616765720a636f6e746578740a2f506c6f6e650a736974652d686561646572"><div class="portletStaticText portlet-static-site-header"><!--googleoff: index-->
+<div class="grid_6 alpha" id="banner"><a href="https://ocw.mit.edu/"><img src="./Lecture Slides and Code _ Introduction to Computer Science and Programming in Python _ Electrical Engineering and Computer Science _ MIT OpenCourseWare_files/ocw_mast.png" class="logo" alt="MIT OpenCourseWare, Massachusetts Institute of Technology"></a></div>
+<div class="grid_6 omega" id="subscribe"><aside class="module" aria-label="Connect with OCW">
+<table class="social">
+    <tbody>
+        <tr>
+            <td class="socialbutton"><a aria-label="Subscribe to the OCW Newsletter" href="https://ocw.mit.edu/subscribe/index.htm?utm_source=header"><img src="./Lecture Slides and Code _ Introduction to Computer Science and Programming in Python _ Electrical Engineering and Computer Science _ MIT OpenCourseWare_files/trans.gif" alt="An icon depicting an envelope.">Subscribe to the OCW Newsletter</a></td>
+            <td><a aria-label="Facebook" href="https://facebook.com/mitocw"><img src="./Lecture Slides and Code _ Introduction to Computer Science and Programming in Python _ Electrical Engineering and Computer Science _ MIT OpenCourseWare_files/icon_fb.png" alt="Click to visit our Facebook page."></a>   <a aria-label="Twitter" href="https://twitter.com/mitocw"><img src="./Lecture Slides and Code _ Introduction to Computer Science and Programming in Python _ Electrical Engineering and Computer Science _ MIT OpenCourseWare_files/icon_twitter.png" alt="Click to visit our Twitter feed."></a>   <a aria-label="YouTube" href="https://www.youtube.com/mitocw"><img src="./Lecture Slides and Code _ Introduction to Computer Science and Programming in Python _ Electrical Engineering and Computer Science _ MIT OpenCourseWare_files/icon_yt.png" alt="Click to visit our YouTube page."></a>   <a aria-label="Open Matters blog on WordPress" href="https://mitopencourseware.wordpress.com/"><img src="./Lecture Slides and Code _ Introduction to Computer Science and Programming in Python _ Electrical Engineering and Computer Science _ MIT OpenCourseWare_files/icon_wp.png" alt="Click to visit our blog on WordPress."></a></td>
+        </tr>
+    </tbody>
+</table>
+</aside><nav aria-label="Help Links" class="helplinks">     <a aria-label="OCW Site Help" href="https://ocw.mit.edu/help">Help</a><span aria-hidden="true">|</span>     <a href="https://ocw.mit.edu/jsp/feedback.jsp?Referer=">Contact Us</a>   </nav></div>
+<div class="clear">&nbsp;</div>
+<!--googleon: index--></div>
+
+</div>
+
+<div id="portletwrapper-6f63772e746f70706f72746c65746d616e616765720a636f6e746578740a2f506c6f6e650a6d6567612d6d656e75" class="portletWrapper kssattr-portlethash-6f63772e746f70706f72746c65746d616e616765720a636f6e746578740a2f506c6f6e650a6d6567612d6d656e75"><div class="portletStaticText portlet-static-mega-menu"><div><nav id="mega" class="grid_8 alpha" aria-label="Site">
+<ul id="menu" role="presentation">
+    <li id="menu_home"><a href="https://ocw.mit.edu/" aria-label="Homepage"><img src="./Lecture Slides and Code _ Introduction to Computer Science and Programming in Python _ Electrical Engineering and Computer Science _ MIT OpenCourseWare_files/top-nav_home.png" class="home_icon" alt="Click for site home page."></a><!-- Begin Home Item --></li>
+    <!-- End Home Item -->
+    <li id="drop_1" aria-label="Find Courses" class="selected"><a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/lecture-slides-code/#" aria-hidden="true">FIND COURSES</a><!-- Begin 5 columns Item -->
+    <div class="dropdown_5columns-a mega-courses">
+    <div class="col_1a">
+    <div class="row_1a"><nav aria-labelledby="mm-find-courses-by">     <span id="mm-find-courses-by" class="nav" aria-hidden="true">Find courses by:</span>
+    <ul class="find_by" role="presentation">
+        <li><a href="https://ocw.mit.edu/courses/find-by-topic/">Topic</a></li>
+        <li><a href="https://ocw.mit.edu/courses/find-by-number/">MIT Course Number</a></li>
+        <li><a href="https://ocw.mit.edu/courses/find-by-department/">Department</a></li>
+    </ul>
+    </nav>     <nav aria-labelledby="mm-collections">     <span id="mm-collections" class="nav" aria-hidden="true">Collections</span>
+    <ul role="presentation">
+        <li><a href="https://ocw.mit.edu/courses/new-courses/">New Courses</a></li>
+        <li><a href="https://ocw.mit.edu/courses/most-visited-courses/">Most Visited Courses</a></li>
+        <li><a href="https://ocw.mit.edu/courses/ocw-scholar/">OCW Scholar Courses</a></li>
+        <li><a href="https://ocw.mit.edu/courses/audio-video-courses/">Audio/Video Lectures</a></li>
+        <li><a href="https://ocw.mit.edu/courses/online-textbooks/">Online Textbooks</a></li>
+        <li><a href="https://ocw.mit.edu/resources/">Supplemental Resources</a></li>
+        <li><a href="https://ocw.mit.edu/high-school/">OCW Highlights for High School</a></li>
+        <li><a href="https://ocw.mit.edu/courses/mitx-related-courseware/">MITx &amp; Related OCW Courses</a></li>
+    </ul>
+    </nav>     <nav class="col_1b" aria-labelledby="mm-translated-courses">     <span id="mm-translated-courses" class="nav" aria-hidden="true" style="line-height: 1.3;">Cross-Disciplinary Topic Lists</span>
+    <ul role="presentation">
+        <li><a href="https://ocw.mit.edu/courses/energy-courses">Energy</a></li>
+        <li><a href="https://ocw.mit.edu/courses/entrepreneurship">Entrepreneurship</a></li>
+        <li><a href="https://ocw.mit.edu/courses/environment-courses">Environment</a></li>
+        <li><a href="https://ocw.mit.edu/courses/intro-programming">Introductory Programming</a></li>
+        <li><a href="https://ocw.mit.edu/courses/life-sciences">Life Sciences</a></li>
+        <li><a href="https://ocw.mit.edu/courses/transportation-courses">Transportation</a></li>
+    </ul>
+    </nav></div>
+    <div class="row_1b"><nav aria-labelledby="mm-cross-disciplinary-topic-lists">     <span id="mm-cross-disciplinary-topic-lists" class="nav" aria-hidden="true">Translated Courses</span>
+    <ul role="presentation">
+        <li><a href="https://ocw.mit.edu/courses/translated-courses/traditional-chinese" aria-label="Traditional Chinese">繁體字 / Traditional Chinese</a></li>
+        <li><a href="https://ocw.mit.edu/courses/translated-courses/spanish" aria-label="Spanish">Español / Spanish</a></li>
+        <li><a href="https://ocw.mit.edu/courses/translated-courses/turkish" aria-label="Turkish">Türkçe / Turkish</a></li>
+        <li><a href="https://ocw.mit.edu/courses/translated-courses/korean" aria-label="Korean">(비디오)한국 / Korean</a></li>
+    </ul>
+    </nav></div>
+    </div>
+    </div>
+    </li>
+    <li id="drop_2"><a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/lecture-slides-code/#" aria-label="For Educators">For Educators</a>
+    <div class="dropdown_1column-a" style="width: 270px;"><nav aria-labelledby="mm-find-courses-by">     <span id="mm-find-courses-by" class="nav" aria-hidden="true">OCW Educator Portal</span>
+    <ul role="presentation">
+        <li><a href="https://ocw.mit.edu/educator/?view=instructional&amp;utm_campaign=Educator&amp;utm_source=megamenu&amp;utm_medium=find-courses&amp;utm_content=approaches">Search for Instructor Insights</a></li>
+        <li><a href="https://ocw.mit.edu/educator/?view=teaching&amp;utm_campaign=Educator&amp;utm_source=megamenu&amp;utm_medium=find-courses&amp;utm_content=materials">Search for Teaching Materials</a></li>
+    </ul>
+    <span id="mm-collections" class="nav" aria-hidden="true">OCW Collections</span>
+    <ul role="presentation">
+        <li><a href="https://ocw.mit.edu/courses/instructor-insights/">Instructor Insights by Department</a></li>
+        <li><a href="https://ocw.mit.edu/courses/find-by-topic/#cat=teachingandeducation">MIT Courses about Teaching and Education</a></li>
+    </ul>
+    <span id="mm-collections" class="nav" aria-hidden="true">K-12</span>
+    <ul role="presentation">
+        <li><a href="https://ocw.mit.edu/high-school/">OCW Highlights for High School</a></li>
+        <li><a href="https://www.k12videos.mit.edu/videos" aria-label="External Link: MIT Plus K12 Videos">MIT+K12 Videos</a></li>
+    </ul>
+    <span id="mm-higher-ed" class="nav" aria-hidden="true">Higher Ed</span>
+    <ul>
+        <li><a href="https://teachingexcellence.mit.edu/" aria-label="External Link: Teaching Excellence at MIT">Teaching Excellence at MIT</a></li>
+        <li><a href="https://ocw.mit.edu/courses/mit-curriculum-guide/">MIT Undergraduate Curriculum Map</a></li>
+    </ul>
+    </nav></div>
+    </li>
+    <li id="drop_3"><a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/lecture-slides-code/#" aria-hidden="true">Give Now</a>
+    <div class="dropdown_1column-a"><nav class="col_1" aria-label="Donate">
+    <ul role="presentation">
+        <li><a href="https://ocw.mit.edu/give/">Make a Donation</a></li>
+        <li><a href="https://ocw.mit.edu/give/why-give/">Why Give?</a></li>
+        <li><a href="https://ocw.mit.edu/give/our-supporters/">Our Supporters</a></li>
+        <li><a href="https://ocw.mit.edu/give/other-ways-to-contribute/">Other Ways to Contribute</a></li>
+        <li><a href="https://ocw.mit.edu/give/shop-ocw">Shop OCW</a></li>
+        <li><a href="https://ocw.mit.edu/support/">Become a Corporate Sponsor</a></li>
+    </ul>
+    </nav></div>
+    </li>
+    <li id="drop_4"><a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/lecture-slides-code/#" aria-hidden="true">About</a>
+    <div class="dropdown_1column-a"><nav class="col_1" aria-label="About">
+    <ul role="presentation">
+        <li><a href="https://ocw.mit.edu/about/">About MIT OpenCourseWare</a></li>
+        <li><a href="https://ocw.mit.edu/about/site-statistics/">Site Statistics</a></li>
+        <li><a href="https://ocw.mit.edu/about/ocw-stories/">OCW Stories</a></li>
+        <li><a href="https://ocw.mit.edu/about/newsletter/">News</a></li>
+    </ul>
+    </nav></div>
+    </li>
+</ul>
+</nav></div></div>
+
+</div>
+
+
+
+
+
+<!--googleoff: index-->
+<script>
+  (function() {
+	var cx = '012626166551961672889:owjdpuboktq';
+	var gcse = document.createElement('script');
+	gcse.type = 'text/javascript';
+	gcse.async = true;
+	gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(gcse, s);
+  })();
+  window.onload = function(){
+	document.getElementById('gsc-i-id1').placeholder = 'Search';	
+  };
+
+$(document).ready(function(){
+
+$('.advanceSearch a').keydown(function(event){showSearchTips($(this),event);})
+$('#searchTipsModal').keydown(function(event){showSearchTips($(this),event);})
+
+function showSearchTips(obj,evt) {
+// if pressed enter key
+	if ( evt.which == 13 || evt.which == 32) {
+		showModal();
+		ga('send', 'pageview', "AdvanceSearch");
+		$(".advanceSearch a").attr('aria-expanded', 'true');
+		$('.searchTipsModal').focus();
+		evt.preventDefault();
+		}
+	if ( evt.which == 27 ) {
+		hideModal();
+		$(".advanceSearch a").attr('aria-expanded', 'false');
+		var modal = document.getElementById('searchTipsModal');
+		modal.style.display = "none";
+		$(".advanceSearch a").focus();
+		evt.preventDefault();
+		}
+}
+
+});
+function showModal(){
+	var modal = document.getElementById('searchTipsModal');
+	modal.style.display = "block";
+	ga('send', 'pageview', "AdvanceSearch");
+	document.getElementById("searchTipsBtn").setAttribute("aria-expanded", true);
+	window.setTimeout(function () {
+    document.getElementById('searchTipsModal').focus(); }, 0);
+}
+
+function hideModal(){
+	var modal = document.getElementById('searchTipsModal');
+	modal.style.display = "none";
+	document.getElementById("searchTipsBtn").setAttribute("aria-expanded", false);
+}
+</script>
+<div id="search" role="search" class="grid_4 omega">
+    	<table class="search">
+				<tbody>
+					<tr>
+						<td><div class="searchboxheader"><div id="___gcse_0"><div class="gsc-control-searchbox-only gsc-control-searchbox-only-en" dir="ltr"><form class="gsc-search-box gsc-search-box-tools" accept-charset="utf-8"><table cellspacing="0" cellpadding="0" class="gsc-search-box"><tbody><tr><td class="gsc-input"><div class="gsc-input-box" id="gsc-iw-id1"><table cellspacing="0" cellpadding="0" id="gs_id50" class="gstl_50 " style="width: 100%; padding: 0px;"><tbody><tr><td id="gs_tti50" class="gsib_a"><input autocomplete="off" type="text" size="10" class="gsc-input" name="search" title="search" id="gsc-i-id1" dir="ltr" spellcheck="false" placeholder="Search" style="width: 100%; padding: 0px; border: none; margin: 0px; height: auto; outline: none; background: url(&quot;https://www.google.com/cse/static/images/1x/googlelogo_lightgrey_46x16dp.png&quot;) left center no-repeat rgb(255, 255, 255); text-indent: 48px;"></td><td class="gsib_b"><div class="gsst_b" id="gs_st50" dir="ltr"><a class="gsst_a" href="javascript:void(0)" style="display: none;"><span class="gscb_a" id="gs_cb50">×</span></a></div></td></tr></tbody></table></div></td><td class="gsc-search-button"><button class="gsc-search-button gsc-search-button-v2"><svg width="13" height="13" viewBox="0 0 13 13"><title>search</title><path d="m4.8495 7.8226c0.82666 0 1.5262-0.29146 2.0985-0.87438 0.57232-0.58292 0.86378-1.2877 0.87438-2.1144 0.010599-0.82666-0.28086-1.5262-0.87438-2.0985-0.59352-0.57232-1.293-0.86378-2.0985-0.87438-0.8055-0.010599-1.5103 0.28086-2.1144 0.87438-0.60414 0.59352-0.8956 1.293-0.87438 2.0985 0.021197 0.8055 0.31266 1.5103 0.87438 2.1144 0.56172 0.60414 1.2665 0.8956 2.1144 0.87438zm4.4695 0.2115 3.681 3.6819-1.259 1.284-3.6817-3.7 0.0019784-0.69479-0.090043-0.098846c-0.87973 0.76087-1.92 1.1413-3.1207 1.1413-1.3553 0-2.5025-0.46363-3.4417-1.3909s-1.4088-2.0686-1.4088-3.4239c0-1.3553 0.4696-2.4966 1.4088-3.4239 0.9392-0.92727 2.0864-1.3969 3.4417-1.4088 1.3553-0.011889 2.4906 0.45771 3.406 1.4088 0.9154 0.95107 1.379 2.0924 1.3909 3.4239 0 1.2126-0.38043 2.2588-1.1413 3.1385l0.098834 0.090049z"></path></svg></button></td><td class="gsc-clear-button"><div class="gsc-clear-button" title="clear results">&nbsp;</div></td></tr></tbody></table></form></div></div></div></td>
+						<td>
+							<div class="advanceSearch">
+								<a id="searchTipsBtn" onclick="showModal();" href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/lecture-slides-code/#" role="button" aria-label="search tips" aria-expanded="false" aria-describedby="searchtips">Search Tips</a>
+
+								<!-- The Modal -->
+								<div id="searchTipsModal" class="modal" tabindex="-1">
+								  <!-- Modal content -->
+									<div class="modal-content">
+										<div class="modal-body">
+											<button class="close" onclick="hideModal();" aria-label="close">X</button>
+											<span>
+												<b>Exclude words from your search</b>
+												<br>Put - in front of a word you want to leave out. For example, jaguar speed -car
+												<br><br>
+												<b>Search for an exact match</b>
+												<br>Put a word or phrase inside quotes. For example, "tallest building".
+												<br><br>
+												<b>Search for wildcards or unknown words</b>
+												<br>Put a * in your word or phrase where you want to leave a placeholder. For example, "largest * in the world".
+												<br><br>
+												<b>Search within a range of numbers</b>
+												<br>Put .. between two numbers. For example, camera $50..$100.
+												<br><br>
+												<b>Combine searches</b>
+												<br>Put "OR" between each search query. For example,  marathon OR race.
+												<br><br>
+											</span>
+										</div>
+								  </div>
+								</div>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+		</table>
+</div>
+<div class="clear"></div>
+<!--googleon: index-->
+<!-- *end header* -->
+
+				
+				
+			</div><!-- top grid end -->
+		</header><!-- top end -->
+			
+		<div id="center">
+         <div id="grid">
+		         <div id="left-section">
+                 <nav aria-label="Breadcrumb" id="breadcrumb">
+                      <p>
+
+    <a href="https://ocw.mit.edu/">Home</a>
+    
+        »
+        
+    
+    
+        
+            <a href="https://ocw.mit.edu/courses">Courses</a>
+            
+                »
+                
+            
+            
+         
+    
+    
+        
+            <a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science">Electrical Engineering and Computer Science</a>
+            
+                »
+                
+            
+            
+         
+    
+    
+        
+            <a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016">Introduction to Computer Science and Programming in Python</a>
+            
+                »
+                
+            
+            
+         
+    
+    
+        
+            
+            
+            Lecture Slides and Code
+         
+    
+</p>
+
+                 </nav>
+                 <div class="clear"></div>
+                   <div id="section_title">
+           			     <h1 class="title" itemprop="name" property="dct:title">
+        <span class="" id="parent-fieldname-title">
+            Lecture Slides and Code
+        </span>
+    </h1>
+             	     </div>
+             	     <div class="clear"></div>
+             	     <div id="course_wrapper_section">
+           	     	 <nav id="course_nav" aria-label="Course">
+               			 
+
+
+
+<script language="javascript" type="text/javascript">
+function toggleMenu(objID) {
+  if (!document.getElementById) return;
+  var ob = document.getElementById(objID);
+  ob.className = (ob.className == 'selected')?'': 'selected';
+}
+function toggleClass(id)
+{
+  var divtoggleClass= document.getElementById(id);
+  divtoggleClass.className = (divtoggleClass.className == 'mO')?'mC': 'mO';
+  return false;
+}
+function changeAlt(id)
+{
+  id.alt = (id.alt == 'Expand Menu')?'Collapse Menu' : 'Expand Menu';
+  id.title = (id.title == 'Expand Menu')?'Collapse Menu' : 'Expand Menu';
+}
+</script>
+<!--Left Nav Starts -->
+
+
+	<ul>			  
+	
+	    	
+	    	    <li class="">
+			   			<a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/index.htm">
+		                  Course Home  			                
+	                    </a>
+		        </li>
+		    
+         	
+	
+	
+	    	
+	    	    <li class="">
+			   			<a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/syllabus">
+		                  Syllabus  			                
+	                    </a>
+		        </li>
+		    
+         	
+	
+	
+	    	
+	    	    <li class="">
+			   			<a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/readings">
+		                  Readings  			                
+	                    </a>
+		        </li>
+		    
+         	
+	
+	
+	    	
+	    	    <li class="">
+			   			<a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/lecture-videos">
+		                  Lecture Videos  			                
+	                    </a>
+		        </li>
+		    
+         	
+	
+	
+	    	
+	    	    <li class="selected">
+			   			<a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/lecture-slides-code">
+		                  Lecture Slides and Code  			                
+	                    </a>
+		        </li>
+		    
+         	
+	
+	
+	    	
+         	<li class="">
+       		<div class="tlp_links">
+	        	<div id="in-class-questions-and-video-solutions" class="mO">
+						<a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/lecture-slides-code/#" class="" onclick="toggleMenu(&#39;menuin-class-questions-and-video-solutions&#39;); toggleClass(&#39;in-class-questions-and-video-solutions&#39;); return false">
+		                  <img src="./Lecture Slides and Code _ Introduction to Computer Science and Programming in Python _ Electrical Engineering and Computer Science _ MIT OpenCourseWare_files/trans.gif" class="expandCollapseTrans" border="0" width="10" height="12" onclick="changeAlt(this)" alt="Expand Menu" title="Expand Menu">
+		                </a>
+		                <a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/in-class-questions-and-video-solutions" class="">
+		                  In-Class Questions and Video Solutions  			                
+	                    </a>
+	                 			                
+	            </div>
+			    
+	        	<ul id="menuin-class-questions-and-video-solutions" class="">
+					               
+		            <li class="">
+				 		<a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/in-class-questions-and-video-solutions/lecture-1" class="">Lecture 1</a>
+		            </li>
+		            <li class="">
+				 		<a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/in-class-questions-and-video-solutions/lecture-2" class="">Lecture 2</a>
+		            </li>
+		            <li class="">
+				 		<a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/in-class-questions-and-video-solutions/lecture-3" class="">Lecture 3</a>
+		            </li>
+		            <li class="">
+				 		<a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/in-class-questions-and-video-solutions/lecture-4" class="">Lecture 4</a>
+		            </li>
+		            <li class="">
+				 		<a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/in-class-questions-and-video-solutions/lecture-5" class="">Lecture 5</a>
+		            </li>
+		            <li class="">
+				 		<a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/in-class-questions-and-video-solutions/lecture-7" class="">Lecture 7</a>
+		            </li>
+		            <li class="">
+				 		<a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/in-class-questions-and-video-solutions/lecture-8" class="">Lecture 8</a>
+		            </li>
+		            <li class="">
+				 		<a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/in-class-questions-and-video-solutions/lecture-9" class="">Lecture 9</a>
+		            </li>
+			    </ul>
+			    
+			</div>
+			</li>
+	
+	
+	    	
+	    	    <li class="">
+			   			<a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/assignments">
+		                  Assignments  			                
+	                    </a>
+		        </li>
+		    
+         	
+	
+	
+	    	
+	    	    
+		    
+         	
+	<!--second tal block close-->  
+	
+		<li class="">
+			<a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/download-course-materials" class="">Download Course Materials</a>
+		</li>
+	
+</ul>
+
+
+<!--Left Nav Ends -->
+
+
+
+
+
+
+
+
+
+           		     </nav>
+           		     <main id="course_inner_section" aria-labelledby="section_title">
+           		     	
+	       		     	<p>The slides and code from each lecture are available below.</p> <div class="maintabletemplate"><table class="tablewidth100" summary="See table caption for summary.">     <caption class="invisible">Lecture note files.</caption>       <thead>         <tr>             <th scope="col">SES&nbsp;#</th>             <th scope="col">TOPICS</th>             <th scope="col">LECTURE SLIDES</th>             <th scope="col">LECTURE CODES</th>         </tr>     </thead>          <tbody>         <tr class="row">             <td>1</td>             <td>What is computation?</td>             <td><a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/lecture-slides-code/MIT6_0001F16_Lec1.pdf">Slides for Lecture 1 (PDF)</a></td>             <td><a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/lecture-slides-code/lec1.py">Code for Lecture 1 (PY)</a></td>         </tr>         <tr class="alt-row">             <td>2</td>             <td>Branching and Iteration</td>             <td><a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/lecture-slides-code/MIT6_0001F16_Lec2.pdf">Slides for Lecture 2 (PDF)</a></td>             <td><a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/lecture-slides-code/lec2_branch_loops.py">Code for Lecture 2 (PY)</a></td>         </tr>         <tr class="row">             <td>3</td>             <td>String Manipulation, Guess and Check, Approximations, Bisection</td>             <td><a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/lecture-slides-code/MIT6_0001F16_Lec3.pdf">Slides for Lecture 3 (PDF)</a></td>             <td><a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/lecture-slides-code/lec3_strings_algos.py">Code for Lecture 3 (PY)</a></td>         </tr>         <tr class="alt-row">             <td>4</td>             <td>Decomposition, Abstractions, Functions</td>             <td><a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/lecture-slides-code/MIT6_0001F16_Lec4.pdf">Slides for Lecture 4 (PDF 1.1MB)</a></td>             <td><a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/lecture-slides-code/lec4_functions.py">Code for Lecture 4 (PY)</a></td>         </tr>         <tr class="row">             <td>5</td>             <td>Tuples, Lists, Aliasing, Mutability, Cloning</td>             <td><a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/lecture-slides-code/MIT6_0001F16_Lec5.pdf">Slides for Lecture 5 (PDF)</a></td>             <td><a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/lecture-slides-code/lec5_tuples_lists.py">Code for Lecture 5 (PY)</a></td>         </tr>         <tr class="alt-row">             <td>6</td>             <td>Recursion, Dictionaries</td>             <td><a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/lecture-slides-code/MIT6_0001F16_Lec6.pdf">Slides for Lecture 6 <span class="nobr">(PDF - 1.3MB)</span></a></td>             <td><a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/lecture-slides-code/lec6_recursion_dictionaries.py">Code for Lecture 6 (PY)</a></td>         </tr>         <tr class="row">             <td>7</td>             <td>Testing, Debugging, Exceptions, Assertions</td>             <td><a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/lecture-slides-code/MIT6_0001F16_Lec7.pdf">Slides for Lecture 7 (PDF)</a></td>             <td><a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/lecture-slides-code/lec7_debug_except.py">Code for Lecture 7 (PY)</a></td>         </tr>         <tr class="alt-row">             <td>8</td>             <td>Object Oriented Programming</td>             <td><a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/lecture-slides-code/MIT6_0001F16_Lec8.pdf">Slides for Lecture 8 <span class="nobr">(PDF)</span></a></td>             <td><a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/lecture-slides-code/lec8_classes.py">Code for Lecture 8 (PY)</a></td>         </tr>         <tr class="row">             <td>9</td>             <td>Python Classes and Inheritance</td>             <td><a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/lecture-slides-code/MIT6_0001F16_Lec9.pdf">Slides for Lecture 9 <span class="nobr">(PDF - 1.6MB)</span></a></td>             <td><a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/lecture-slides-code/lec9_inheritance.py">Code for Lecture 9 (PY)</a></td>         </tr>         <tr class="alt-row">             <td>10</td>             <td>Understanding Program Efficiency, Part 1</td>             <td><a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/lecture-slides-code/MIT6_0001F16_Lec10.pdf">Slides for Lecture 10 (PDF)</a></td>             <td><a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/lecture-slides-code/lec10_complexity_part1.py">Code for Lecture 10 (PY)</a></td>         </tr>         <tr class="row">             <td>11</td>             <td>Understanding Program Efficiency, Part 2</td>             <td><a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/lecture-slides-code/MIT6_0001F16_Lec11.pdf">Slides for Lecture 11 (PDF)</a></td>             <td><a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/lecture-slides-code/lec11_complexity_part2.py">Code for Lecture 11 (PY)</a></td>         </tr>         <tr class="alt-row">             <td>12</td>             <td>Searching and Sorting</td>             <td><a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/lecture-slides-code/MIT6_0001F16_Lec12.pdf">Slides for Lecture 12 <span class="nobr">(PDF - 2.4MB)</span></a></td>             <td><a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/lecture-slides-code/lec12_sorting.py">Code for Lecture 12 (PY)</a></td>         </tr>     </tbody> </table></div>
+	                    
+    
+    
+    
+
+
+<!--googleoff: index-->
+<div class="help slide-bottom" style="display: block;">
+  <div class="help-message">
+    <a class="help-engage" href="javascript: trackEvents(&#39;Bottom Get Started&#39;,&#39;bottom get started Click&#39;,&#39;Help Overlay&#39;);">Need help getting started?</a>
+    <a href="javascript:disableHelpPopup(); trackEvents(&#39;Bottom Don\&#39;t Show&#39;,&#39;bottom don\&#39;t show Click&#39;,&#39;Help Overlay&#39;);" class="help-dismiss">Don't show me this again</a>
+  </div><!--help-message-->
+</div><!--help slide-bottom-->
+
+
+<div class="help popup-center" style="display: none;">
+  <div class="help-message">
+    <p class="help-dismiss"><a href="javascript:disableHelpPopup(); trackEvents(&#39;Popup Don\&#39;t Show&#39;,&#39;popup don\&#39;t show Click&#39;,&#39;Help Overlay&#39;);">Don't show me this again</a></p>
+    <h2>Welcome!</h2>
+    <p>This is one of over 2,200 courses on OCW. Find materials for this course in the pages linked along the left. </p>
+    
+    
+    
+    <p><strong>MIT OpenCourseWare</strong> is a free &amp; open publication of material from thousands of MIT courses, covering the entire MIT curriculum.</p>
+
+    <p><strong>No enrollment or registration.</strong> Freely browse and use OCW materials at your own pace. There's no signup, and no start or end dates.</p>
+
+    <p><strong>Knowledge is your reward.</strong> Use OCW to guide your own life-long learning, or to teach others. We don't offer credit or certification for using OCW.</p>
+
+    <p><strong>Made for sharing</strong>. Download files for later. Send to friends and colleagues. Modify, remix, and reuse (just remember to cite OCW as the source.)</p>
+
+    <p class="help-engage">Learn more at <a href="https://ocw.mit.edu/help/get-started-with-ocw/" onclick="trackEvents(&#39;Popup Get Started&#39;,&#39;popup get started Click&#39;,&#39;Help Overlay&#39;);">Get Started with MIT OpenCourseWare</a></p>
+  </div><!-- help-message -->
+</div> <!--help popup-center-->
+<!--googleon: index-->
+
+	        			
+	                    
+	                    
+	                    	
+	                    
+
+            		 </main><!--Course_inner_section tag close -->
+           		     <div class="clear"></div>
+ 				 </div><!--Course_wrapper tag close -->             
+ 			 </div><!--left tag close -->
+ 			
+         </div><!--grid tag close -->
+      </div>
+		
+		<footer id="bottom">
+			<div id="grid">
+				
+<div id="portletwrapper-6f63772e626f74746f6d706f72746c65746d616e616765720a636f6e746578740a2f506c6f6e650a736974652d666f6f746572" class="portletWrapper kssattr-portlethash-6f63772e626f74746f6d706f72746c65746d616e616765720a636f6e746578740a2f506c6f6e650a736974652d666f6f746572"><div class="portletStaticText portlet-static-site-footer"><div id="footer"><nav aria-label="Footer">     <nav id="foot-c1" class="grid_2 alpha" aria-labelledby="f-find-courses">       <span class="footer" id="f-find-courses" aria-hidden="true">Find Courses</span>
+<ul class="foot-bullet" role="presentation">
+    <li><a href="https://ocw.mit.edu/courses/find-by-topic/">Find by Topic</a></li>
+    <li><a href="https://ocw.mit.edu/courses/find-by-number/">Find by Course Number</a></li>
+    <li><a href="https://ocw.mit.edu/courses/find-by-department/">Find by Department</a></li>
+    <li><a href="https://ocw.mit.edu/courses/new-courses/">New Courses</a></li>
+    <li><a href="https://ocw.mit.edu/courses/most-visited-courses/">Most Visited Courses</a></li>
+    <li><a href="https://ocw.mit.edu/courses/ocw-scholar/">OCW Scholar Courses</a></li>
+    <li><a href="https://ocw.mit.edu/courses/audio-video-courses/">Audio/Video Courses</a></li>
+    <li><a href="https://ocw.mit.edu/courses/online-textbooks/">Online Textbooks</a></li>
+    <li><a href="https://ocw.mit.edu/courses/instructor-insights/">Instructor Insights</a></li>
+    <li><a href="https://ocw.mit.edu/resources/">Supplemental Resources</a></li>
+    <li><a href="https://ocw.mit.edu/courses/mitx-related-courseware/">MITx &amp; Related OCW Courses</a></li>
+    <li><a href="https://ocw.mit.edu/courses/translated-courses/">Translated Courses</a></li>
+</ul>
+</nav>
+<div id="foot-c2" class="grid_2"><nav aria-labelledby="f-for-educators">         <span id="f-for-educators" class="footer" aria-hidden="true">For Educators</span>
+<ul class="foot-bullet" role="presentation">
+    <li><a href="https://ocw.mit.edu/educator/?view=instructional&amp;utm_campaign=Educator&amp;utm_source=footer&amp;utm_medium=find-courses&amp;utm_content=approaches">Search for Instructor Insights</a></li>
+    <li><a href="https://ocw.mit.edu/educator/?view=teaching&amp;utm_campaign=Educator&amp;utm_source=footer&amp;utm_medium=find-courses&amp;utm_content=materials">Search for Teaching Materials</a></li>
+    <li><a href="https://ocw.mit.edu/courses/instructor-insights/">Instructor Insights by Department</a></li>
+    <li><a href="https://ocw.mit.edu/courses/find-by-topic/#cat=teachingandeducation">MIT Courses about Teaching and Education</a></li>
+    <li><a href="https://ocw.mit.edu/high-school/">Highlights for High School</a></li>
+    <li><a href="http://k12videos.mit.edu/" aria-label="External Link: MIT+K12 Videos">MIT+K12 Videos</a></li>
+    <li><a href="http://teachingexcellence.mit.edu/" aria-label="External Link: Teaching Excellence at MIT">Teaching Excellence at MIT</a></li>
+    <li><a href="https://ocw.mit.edu/courses/mit-curriculum-guide/">MIT Undergraduate Curriculum Map</a></li>
+</ul>
+</nav></div>
+<nav class="grid_2" id="foot-c3" aria-labelledby="f-donate">       <span id="f-donate" class="footer" aria-hidden="true">Give Now</span>
+<ul class="foot-bullet" role="presentation">
+    <li><a href="https://ocw.mit.edu/give/">Make a Donation</a></li>
+    <li><a href="https://ocw.mit.edu/give/why-give/">Why Give?</a></li>
+    <li><a href="https://ocw.mit.edu/give/our-supporters/">Our Supporters</a></li>
+    <li><a href="https://ocw.mit.edu/give/other-ways-to-contribute/">Other Ways to Contribute</a></li>
+    <li><a href="https://ocw.mit.edu/give/shop-ocw/">Shop OCW</a></li>
+    <li><a href="https://ocw.mit.edu/support/">Become a Corporate Sponsor</a></li>
+</ul>
+</nav>
+<div class="grid_2" id="foot-c4"><nav aria-labelledby="f-about">         <span id="f-about" class="footer" aria-hidden="true">About</span>
+<ul class="foot-bullet" role="presentation">
+    <li><a href="https://ocw.mit.edu/about/">About OpenCourseWare</a></li>
+    <li><a href="https://ocw.mit.edu/about/site-statistics/">Site Statistics</a></li>
+    <li><a href="https://ocw.mit.edu/about/ocw-stories/">OCW Stories</a></li>
+    <li><a href="https://ocw.mit.edu/about/newsletter/">News</a></li>
+    <li><a href="https://ocw.mit.edu/about/media-coverage/press-releases/">Press Releases</a></li>
+</ul>
+</nav><!--about-->       <nav aria-labelledby="f-tools">         <span id="f-tools" class="footer" aria-hidden="true">Tools</span>
+<ul class="foot-bullet" role="presentation">
+    <li><a href="https://ocw.mit.edu/help/">Help &amp; FAQs</a></li>
+    <li><a href="https://ocw.mit.edu/jsp/feedback.jsp">Contact Us</a></li>
+    <li><a href="https://ocw.mit.edu/help/site-map/">Site Map</a></li>
+    <li><a href="https://ocw.mit.edu/terms/">Privacy &amp; Terms of Use</a></li>
+    <li><a href="https://ocw.mit.edu/help/rss/">RSS Feeds</a></li>
+</ul>
+</nav><!--tools--></div>
+</nav> <aside style="min-height: 289px;" aria-labelledby="f-our-corporate-supporters" class="grid_4 omega" id="foot-c5">           <span aria-hidden="true" class="footer" id="f-our-corporate-supporters">Our Corporate Supporters</span>           <!-- HOME_CORP_LOGO_1 -->
+<div id="div-gpt-ad-1388181177156-0" class="sponsors_google_ads_even" data-google-query-id="CK_J2eTAkNwCFYx7fgodryULfQ"><script type="text/javascript">
+              googletag.cmd.push(function() { googletag.display('div-gpt-ad-1388181177156-0'); });
+            </script><div id="google_ads_iframe_/1064917/HOME_CORP_LOGO_1_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/1064917/HOME_CORP_LOGO_1_0" title="3rd party ad content" name="google_ads_iframe_/1064917/HOME_CORP_LOGO_1_0" width="145" height="53" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" style="border: 0px; vertical-align: bottom;" src="./Lecture Slides and Code _ Introduction to Computer Science and Programming in Python _ Electrical Engineering and Computer Science _ MIT OpenCourseWare_files/saved_resource.html"></iframe></div></div>
+<!-- HOME_CORP_LOGO_2 -->
+<div id="div-gpt-ad-1388181177156-1" class="sponsors_google_ads_odd" data-google-query-id="CLDJ2eTAkNwCFYx7fgodryULfQ"><script type="text/javascript">
+              googletag.cmd.push(function() { googletag.display('div-gpt-ad-1388181177156-1'); });
+            </script><div id="google_ads_iframe_/1064917/HOME_CORP_LOGO_2_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/1064917/HOME_CORP_LOGO_2_0" title="3rd party ad content" name="google_ads_iframe_/1064917/HOME_CORP_LOGO_2_0" width="145" height="53" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" style="border: 0px; vertical-align: bottom;" src="./Lecture Slides and Code _ Introduction to Computer Science and Programming in Python _ Electrical Engineering and Computer Science _ MIT OpenCourseWare_files/saved_resource(1).html"></iframe></div></div>
+<!-- HOME_CORP_LOGO_3 -->
+<div id="div-gpt-ad-1388181177156-2" class="sponsors_google_ads_even" data-google-query-id="CLHJ2eTAkNwCFYx7fgodryULfQ"><script type="text/javascript">
+              googletag.cmd.push(function() { googletag.display('div-gpt-ad-1388181177156-2'); });
+            </script><div id="google_ads_iframe_/1064917/HOME_CORP_LOGO_3_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/1064917/HOME_CORP_LOGO_3_0" title="3rd party ad content" name="google_ads_iframe_/1064917/HOME_CORP_LOGO_3_0" width="145" height="53" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" style="border: 0px; vertical-align: bottom;" src="./Lecture Slides and Code _ Introduction to Computer Science and Programming in Python _ Electrical Engineering and Computer Science _ MIT OpenCourseWare_files/saved_resource(2).html"></iframe></div></div>
+<!-- HOME_CORP_LOGO_4 -->
+<div id="div-gpt-ad-1388181177156-3" class="sponsors_google_ads_odd" data-google-query-id="CLLJ2eTAkNwCFYx7fgodryULfQ"><script type="text/javascript">
+              googletag.cmd.push(function() { googletag.display('div-gpt-ad-1388181177156-3'); });
+            </script><div id="google_ads_iframe_/1064917/HOME_CORP_LOGO_4_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/1064917/HOME_CORP_LOGO_4_0" title="3rd party ad content" name="google_ads_iframe_/1064917/HOME_CORP_LOGO_4_0" width="145" height="53" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" style="border: 0px; vertical-align: bottom;" src="./Lecture Slides and Code _ Introduction to Computer Science and Programming in Python _ Electrical Engineering and Computer Science _ MIT OpenCourseWare_files/saved_resource(3).html"></iframe></div></div>
+<!-- HOME_CORP_LOGO_5 -->
+<div id="div-gpt-ad-1388181177156-4" class="sponsors_google_ads_even" data-google-query-id="CLPJ2eTAkNwCFYx7fgodryULfQ"><script type="text/javascript">
+              googletag.cmd.push(function() { googletag.display('div-gpt-ad-1388181177156-4'); });
+              </script><div id="google_ads_iframe_/1064917/HOME_CORP_LOGO_5_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/1064917/HOME_CORP_LOGO_5_0" title="3rd party ad content" name="google_ads_iframe_/1064917/HOME_CORP_LOGO_5_0" width="145" height="53" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" style="border: 0px; vertical-align: bottom;" src="./Lecture Slides and Code _ Introduction to Computer Science and Programming in Python _ Electrical Engineering and Computer Science _ MIT OpenCourseWare_files/saved_resource(4).html"></iframe></div></div>
+<!-- HOME_CORP_LOGO_6 -->
+<div id="div-gpt-ad-1388181177156-5" class="sponsors_google_ads_odd" data-google-query-id="CLTJ2eTAkNwCFYx7fgodryULfQ"><script type="text/javascript">
+              googletag.cmd.push(function() { googletag.display('div-gpt-ad-1388181177156-5'); });
+              </script><div id="google_ads_iframe_/1064917/HOME_CORP_LOGO_6_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/1064917/HOME_CORP_LOGO_6_0" title="3rd party ad content" name="google_ads_iframe_/1064917/HOME_CORP_LOGO_6_0" width="145" height="53" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" style="border: 0px; vertical-align: bottom;" src="./Lecture Slides and Code _ Introduction to Computer Science and Programming in Python _ Electrical Engineering and Computer Science _ MIT OpenCourseWare_files/saved_resource(5).html"></iframe></div></div>
+</aside>
+<div class="grid_12 alpha omega" itemprop="publisher" itemscope="" itemtype="http://schema.org/CollegeOrUniversity">
+<h4 class="footer" style="border-top: thin solid #d5c9ba; padding-top: 10px; margin-bottom: 10px;">About <span itemprop="name">MIT OpenCourseWare</span></h4>
+<p style="color: #999; font-size: 1em; line-height: 1.5em; margin-top: 10px;" itemprop="description">MIT OpenCourseWare makes the materials used in the teaching of almost all of MIT's subjects available on the Web, free of charge. With more than 2,400 courses available, OCW is delivering on the promise of open sharing of knowledge. <a href="http://ocw.mit.edu/about/">Learn more »</a></p>
+</div>
+<div id="foot-copy" class="grid_12 alpha omega" style="border-top: none;"><a href="http://web.mit.edu/"><img src="./Lecture Slides and Code _ Introduction to Computer Science and Programming in Python _ Electrical Engineering and Computer Science _ MIT OpenCourseWare_files/logo_mit.png" alt="Massachusetts Institute of Technology logo and name." style="width: 195; height: 44;"></a><a href="http://odl.mit.edu/"><img src="./Lecture Slides and Code _ Introduction to Computer Science and Programming in Python _ Electrical Engineering and Computer Science _ MIT OpenCourseWare_files/logo_odl.png" alt="MIT Office of Digital Learning logo and name." style="width: 289; height: 54; vertical-align: top;"></a><a href="http://www.oeconsortium.org/"><img src="./Lecture Slides and Code _ Introduction to Computer Science and Programming in Python _ Electrical Engineering and Computer Science _ MIT OpenCourseWare_files/logo_oec.png" alt="Open Education Consortium logo." style="width: 219px; height: 59px; vertical-align: top;"></a><a rel="license" itemprop="useRightsUrl" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="./Lecture Slides and Code _ Introduction to Computer Science and Programming in Python _ Electrical Engineering and Computer Science _ MIT OpenCourseWare_files/cc_by-nc-sa.png" alt="Creative Commons logo with terms BY-NC-SA." style="width: 126px; height: 44px; margin-right: 0; margin-left: 13px;"></a>
+<p class="copyright">© 2001–2018<br> Massachusetts Institute of Technology</p>
+<p style="font-size: 0.9em; margin-bottom: 15px;">Your use of the MIT OpenCourseWare site and materials is subject to our <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="license">Creative Commons License</a> and other <a href="https://ocw.mit.edu/terms/" rel="cc:morePermissions">terms of use</a>.</p>
+</div>
+</div></div>
+
+</div>
+
+
+
+
+
+                
+			</div> <!-- bottom grid end -->
+		</footer><!-- footer bottom end -->
+
+
+   
+ 
+
+<div id="_atssh" style="visibility: hidden; height: 1px; width: 1px; position: absolute; top: -9999px; z-index: 100000;"><iframe id="_atssh870" title="AddThis utility frame" style="height: 1px; width: 1px; position: absolute; top: 0px; z-index: 100000; border: 0px; left: 0px;" src="./Lecture Slides and Code _ Introduction to Computer Science and Programming in Python _ Electrical Engineering and Computer Science _ MIT OpenCourseWare_files/sh.e4e8af4de595fdb10ec1459d.html"></iframe></div><style id="service-icons-0"></style><table cellspacing="0" cellpadding="0" class="gstl_50 gssb_c" style="width: 125px; display: none; top: 131px; left: 842px; position: absolute;"><tbody><tr><td class="gssb_f"></td><td class="gssb_e" style="width: 100%;"></td></tr></tbody></table><iframe id="google_osd_static_frame_481310593046" name="google_osd_static_frame" style="display: none; width: 0px; height: 0px;" src="./Lecture Slides and Code _ Introduction to Computer Science and Programming in Python _ Electrical Engineering and Computer Science _ MIT OpenCourseWare_files/saved_resource(6).html"></iframe><div class="jquerybubblepopup jquerybubblepopup-grey" id="jquerybubblepopup-1531087332-0" style="opacity: 0; top: 211.404px; left: 870px; position: absolute; display: none;"> 									<table> 									<tbody> 									<tr> 										<td class="jquerybubblepopup-top-left" style="background-image:url(/images/jquerybubblepopup-theme/grey/top-left.png);"></td> 										<td class="jquerybubblepopup-top-middle" style="background-image:url(/images/jquerybubblepopup-theme/grey/top-middle.png);"></td> 										<td class="jquerybubblepopup-top-right" style="background-image:url(/images/jquerybubblepopup-theme/grey/top-right.png);"></td> 									</tr> 									<tr> 										<td class="jquerybubblepopup-middle-left" style="background-image:url(/images/jquerybubblepopup-theme/grey/middle-left.png);"></td> 										<td class="jquerybubblepopup-innerHtml" style="color:#000000;text-align:left;">Use the <a href="http://www.python.org/">Python interpreter</a> to run .py files.</td> 										<td class="jquerybubblepopup-middle-right" style="background-image:url(/images/jquerybubblepopup-theme/grey/middle-right.png);"></td> 									</tr> 									<tr> 										<td class="jquerybubblepopup-bottom-left" style="background-image:url(/images/jquerybubblepopup-theme/grey/bottom-left.png);"></td> 										<td class="jquerybubblepopup-bottom-middle" style="background-image: url(&quot;/images/jquerybubblepopup-theme/grey/bottom-middle.png&quot;); text-align: center;"><img src="./Lecture Slides and Code _ Introduction to Computer Science and Programming in Python _ Electrical Engineering and Computer Science _ MIT OpenCourseWare_files/tail-bottom.png" alt="" class="jquerybubblepopup-tail"></td> 										<td class="jquerybubblepopup-bottom-right" style="background-image:url(/images/jquerybubblepopup-theme/grey/bottom-right.png);"></td> 									</tr> 									</tbody> 									</table> 									</div></body></html>
